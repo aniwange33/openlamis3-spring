@@ -1,0 +1,599 @@
+/* 
+    Document   : lamis
+    Created on : Feb 3, 2012, 3:49:03 PM
+    Author     : AALOZIE
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333;
+    background-color: #FFFFFF;
+}
+#page{
+    height: 710px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: thin none #000;
+}
+
+#mainPanel{
+    height: 700px;
+    margin-top: 70px;
+    display: block;
+}
+
+#leftPanel{
+    height: 690px;
+    width: 240px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 50px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+}
+
+
+#rightPanel{
+    height: 700px;
+    width: 773px;
+    margin-left: 300px;
+}
+
+#rightPanelScroll{
+    height: 690px;
+    width: 930px;    
+    margin-top: 2px; 
+    margin-left: 249px;   
+    overflow-y: scroll;
+}
+
+#footer{
+    background-color: #E1E1E3;
+    height: 40px;
+    display: block;
+}
+
+#footerMessage{
+    height: 25px;   
+    float: left;
+    margin-left: 402px;   
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    color: #CD853F;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#footerMessage2{
+    height: 25px;
+    margin-right: 145px;
+    float: right;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;  
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
+}
+
+
+#version {
+  font-size: 9pt;
+  font-weight: bold;
+  font-family: LiberationSansBold, arial;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Header                                                                     */
+/*----------------------------------------------------------------------------*/
+
+#header{
+  position: fixed;
+  height: 55px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #8C91A1;
+  box-shadow: 0 0 3px #222;
+}
+
+#headerBanner {
+  position: absolute;
+  top: 5px;
+  left: 55px;
+}
+
+#headerText {
+  position: absolute;
+  top: 18px;
+  left: 210px;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: LiberationSansBold, arial;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Main menu                                                               */
+/*----------------------------------------------------------------------------*/
+
+#menuArea {
+    position: absolute;
+    top: 12px;
+    left: 450px;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+#menu > li {
+    float: left;
+}
+
+#menu > li > a {
+   font-size: 11pt;
+   font-weight: bold;
+   cursor: pointer;
+   color: #fff;
+}
+
+#menu li a {
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 1.5em;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Submenu                                                               */
+/*----------------------------------------------------------------------------*/
+
+#menu ul {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    min-width: 180px;
+    list-style-type: none;
+    background-color: #8C91A1;
+    box-shadow: #ccc 0 1px 1px 0;
+}
+
+#menu ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu ul a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #DCE9FE;
+}
+
+#menu li:hover ul{
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Navigation                                                              */
+/*----------------------------------------------------------------------------*/
+
+#navigation {
+    height: 300px;
+    width: 180px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+
+.navTitle{
+    height: 20px;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    background-color: #E1E1E3;
+    color: #333333;
+}
+
+div.navMenu {
+    width: 220px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #999999;
+}
+div.navMenu div {
+    overflow: hidden;
+}
+
+div.navMenu div.collapsed {
+    height: 25px;
+}
+div.navMenu div span {
+    display: block;
+    padding: 5px 18px;
+    color: white;
+    background: url(expanded.gif) no-repeat 5px center;
+    cursor: default;
+    border-bottom: 1px solid #ddd;
+}
+div.navMenu div.collapsed span {
+    background-image: url(collapsed.gif);
+}
+div.navMenu div a {
+    padding: 5px 10px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    color: #333333;
+}
+div.navMenu div a.current {
+    background : #ccc;
+}
+div.navMenu div a:hover {
+    background : #DCE9FE;
+    color: #000;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Dashboard                                                               */
+/*----------------------------------------------------------------------------*/
+#chart1 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 2px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart2 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 2px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart3 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 30px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart4 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 30px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart5 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 60px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart6 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 60px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart7 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 90px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chart8 {
+    position: relative;
+    height: 345px;
+    width: 430px;
+    top: 90px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+/*----------------------------------------------------------------------------*/
+/* Sync                                                               */
+/*----------------------------------------------------------------------------*/
+#chartPanelScroll {
+    height:230px;
+    width: 767px;
+    margin-left: 1px;
+    overflow-y: scroll;
+}
+
+#chartSync1 {
+    position: relative;
+    height: 222px;
+    width: 350px;
+    top: 2px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chartSync2 {
+    position: relative;
+    height: 222px;
+    width: 350px;
+    top: 2px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chartSync3 {
+    position: relative;
+    height: 222px;
+    width: 350px;
+    top: 30px;
+    left: 5px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+#chartSync4 {
+    position: relative;
+    height: 222px;
+    width: 350px;
+    top: 30px;
+    left: 30px;
+    float: left;
+    color: #F2F0E9;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+/*----------------------------------------------------------------------------*/
+/* General                                                               */
+/*----------------------------------------------------------------------------*/
+form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    padding-left: 5px;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    background-color: #FFF;
+    border: thin solid #CCC;
+}
+a
+{
+  text-decoration: none;
+  /*color: #3162C5;*/
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+img 
+{
+  border: 0;
+}
+
+ul,ol 
+{
+  padding: 0;
+}
+
+#mainBackground{
+    height: 628px;
+    width: 773px;
+    margin-left: 226px;
+    background-image: url(images/background1.jpg);
+}
+
+.topheaders {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    background-color: #E1E1E3;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.tableheaders {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+}
+.insidetxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#buttons {
+    float: right;
+    height: 30px;
+    width: 230px;
+    background-color: #FFF;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+#buttons button{
+    clear:both;
+    width:82px;
+    border:none;
+    height:30px;
+    text-align:center;
+    font-size:11px;
+    background-color: #0F9AF7;
+    color: #FFF;
+}
+
+
+#buttons button[disabled] {
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    color: #ccc;
+}
+
+
+legend {
+    margin-left: 1em;
+    color: #0F9AF7;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}  
+
+fieldset {
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  border: 1px solid #5083AE;
+}  
+
+#messageBar {
+    display: none;
+    padding: 1em;
+    margin: 1em;
+    height: 8px;
+    width: 720px;
+    background-color: #ffffbf;
+    border: 1px solid #cccc00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+span#patientInfor {
+    color: #CD853F;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
+}
+
+span#childInfor {
+    color: #CD853F;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
+}
+
+#hyperlink:hover span{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+span#radet_link1:hover {
+    text-decoration: underline;
+}
+span#radet_link2:hover {
+    text-decoration: underline;
+}
+span#radet_link3:hover {
+    text-decoration: underline;
+}
+span#radet_link4:hover {
+    text-decoration: underline;
+}
+
+.errorspan {
+    color:red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
+}
+
+/*----------------------------------------------------------------------------*/
+/* Zebra Dialog customization                                                               */
+/*----------------------------------------------------------------------------*/
+
+.notifierclass .ZebraDialog_Body{
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    display: inline-block
+}
+
+.smsdialogclass .ui-dialog .ui-dialog-content{
+    background: #FFFFFF;
+    border: 1px solid #ccc;    
+}

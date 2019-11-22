@@ -1,0 +1,45 @@
+// Back to top button start
+window.onscroll = function () {
+    scrollToTop();
+};
+function scrollToTop() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("back2TopBtn").style.display = "block";
+    } else {
+        document.getElementById("back2TopBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+// Back to top button end
+
+
+// script for add and remove attr page
+ $(document).ready(function () {
+                $("#addattr").click(function () {
+                    $("#ws").attr("style", "font-size:30px;color:#337ab7;");
+                });
+                $("#removeattr").click(function () {
+                    $("#ws").removeAttr("style");
+                });
+ });
+
+// script for add and remove option from select
+
+ $(document).ready(function () {
+    var i = 0;
+      $("#add1").on("click", function () {
+         i++;
+    $("#item1").append("<option value='item" + i + "'>Item " + i + "</option>");
+         alert("New item added.");
+                });
+                $("#remove1").on("click", function () {
+                    $("#country1 option:selected").remove();
+                    alert("Selected country removed.");
+                });
+            });
+
+

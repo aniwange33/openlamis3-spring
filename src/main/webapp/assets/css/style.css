@@ -1,0 +1,335 @@
+/* jqModal base Styling courtesy of;
+        Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+        the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+
+.jqmWindow {
+    display: none;
+
+    position: fixed;
+    top: 17%;
+    left: 50%;
+
+    margin-left: -300px;
+    width: 600px;
+
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+              width: expression(this.parentNode.offsetWidth+'px');
+              height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+    position: absolute;
+    top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+/*
+LAMIS Custom CSS
+*/
+
+.font-icon-list:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.all-icons .font-icon-list .font-icon-detail, p{
+    font-size: large;
+    font-weight:300;
+}
+
+.font-icon-detail{
+    background-color: #888888;
+    color: black;
+}
+.font-icon-detail:hover{
+    background-color: #e7450f;
+    color:white;
+}
+
+.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: black;
+
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+/* .nav-link .now-ui-icons {
+  font-size: 48px;
+  color: #e6440e;
+} */
+.nav-pills .nav-item i.now-ui-icons {
+    font-size: 36px;
+    color: #e6440e;
+}
+
+.nav-pills .nav-item i.now-ui-icons:hover {
+    font-size: 36px;
+    color: #ffffff;
+} 
+
+.datepicker{
+    display: block;
+    z-index: 99 !important;  
+}
+
+.form-control{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+label{
+    color: #000000;
+}
+label.form-label, label.form-check-label{
+    color: #000000;
+}
+.btn{
+    font-size: 14px;
+}
+.nav-pills.nav-pills-primary .nav-item .nav-link:hover, .nav-pills.nav-pills-primary .nav-item .nav-link:focus, .nav-pills.nav-pills-primary .nav-item .nav-link:hover {
+    background-color: #FF6600;
+    color: #fff;
+    box-shadow: 0 5px 35px 0 rgba(0,0,0,.3);
+}
+.all-icons{
+    margin-top: -15px;
+    margin-bottom: -15px;
+} 
+.panel-header-sm {
+    height: 100px !important;
+    background-image: linear-gradient(#0c2646,#6081a5);
+}
+
+.all-icons > .nav-pills > .row{
+    margin-bottom: -15px;
+}
+a.navbar-brand{
+    font-size: 72px;
+    font-weight: 900;
+}
+.all-icons > .nav-pills > .nav-item{
+    border-color: #e7450f;
+    border-width: medium;
+}
+
+.ui-th-div {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    height: 5px;
+}
+.ui-pg-table.ui-common-table.ui-paging-pager{
+    color: black;
+    font-size: 12px;
+    height: 4px;
+}
+
+.flex-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-content: stretch;
+    align-items: stretch;
+}
+.flex-item {
+    margin: 0.1em;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.form-control.search, .input-group-append .input-group-text, .input-group-prepend .input-group-text{
+    border-radius: 3px;
+}
+/*nav.navbar{
+    position: fixed;
+    z-index: 3;
+    top: 60px;
+    width: 100%;
+}*/
+
+/*#preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url('../img/loader.gif');
+  background-repeat: no-repeat round;
+    background-size: 100% 100%
+}*/
+
+.wrapper {
+    display: none;
+}
+
+#preloader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+#mainBackground{
+    height: 628px;
+    width: 773px;
+    margin-left: 226px;
+    background-image: url('../img/background.jpg');
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: .5rem .7rem;
+    line-height: 1.625rem;
+    margin-right: 3px;
+}
+span#patientInfor {
+    font-color: #000;
+    font-weight: bold;
+    font-size: 14px; 
+    text-transform: capitalize;
+}
+.navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn) {
+    color: #000;
+}
+label{
+    color: black;
+    font-size: 14px;
+    font-family:"Segoe UI";
+}
+.card label {
+    color: black;
+    font-size: 14px;
+    font-family:"Segoe UI";
+    /* "Segoe UI",Roboto,"Helvetica Neue","Segoe UI Symbol" */
+}
+.btn-primary{
+    background-color: #FF6600;
+}
+
+.bg-primary{
+    background-color: #FF6600;
+}
+.btn-default{
+    background-color: #666666;
+}
+
+.card .card-header:not([data-background-color]) {
+    background-color: #fff;
+}
+
+/*
+#adgrid > input{
+   border-width: 2px;
+   border-color: #FF6600;
+}
+*/
+
+td.table_dropdown {
+    overflow:visible !important;
+    white-space: normal !important;
+}
+
+/*#table-btn.dropdown-menu .bootstrap-select .dropdown-menu.inner li a, .dropdown-menu .dropdown-item {
+    font-size: .8571em;
+    padding: .2rem;
+    margin-right: .2rem;
+    margin-top: 2px;
+    transition: all .15s linear;
+}*/
+.header-fixed {
+    width: 100% 
+}
+
+.header-fixed > thead,
+.header-fixed > tbody,
+.header-fixed > thead > tr,
+.header-fixed > tbody > tr,
+.header-fixed > thead > tr > th,
+.header-fixed > tbody > tr > td {
+    display: block;
+}
+
+.header-fixed > tbody > tr:after,
+.header-fixed > thead > tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.header-fixed > tbody {
+    overflow-y: auto;
+    height: 150px;
+}
+
+.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+    width: 20%;
+    float: left;
+}
+
+#hyperlink:hover span{
+    font-size: 16px;
+    text-decoration: underline;
+}

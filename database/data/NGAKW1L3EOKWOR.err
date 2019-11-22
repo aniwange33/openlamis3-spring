@@ -1,0 +1,484 @@
+2019-10-15  9:13:44 11936 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-15  9:13:44 11936 [Note] InnoDB: Uses event mutexes
+2019-10-15  9:13:44 11936 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-15  9:13:44 11936 [Note] InnoDB: Number of pools: 1
+2019-10-15  9:13:44 11936 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-15  9:13:44 11936 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-15  9:13:44 11936 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-15  9:13:44 11936 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-15  9:13:44 11936 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-15  9:13:44 11936 [Note] InnoDB: Starting shutdown...
+2019-10-15  9:13:44 11936 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-15  9:13:44 11936 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-15  9:13:45 11936 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-15  9:13:45 8856 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-15  9:13:45 8856 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-15  9:13:45 8856 [Warning] Checking table:   '.\mysql\db'
+2019-10-15  9:13:45 8856 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-15  9:13:46 8856 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-15  9:13:46 8856 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-15  9:13:46 8856 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-15  9:13:46 8856 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-15  9:14:03 16984 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-15  9:14:03 16984 [Note] InnoDB: Uses event mutexes
+2019-10-15  9:14:03 16984 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-15  9:14:03 16984 [Note] InnoDB: Number of pools: 1
+2019-10-15  9:14:03 16984 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-15  9:14:03 16984 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-15  9:14:03 16984 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-15  9:14:03 16984 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-15  9:14:03 16984 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-15  9:14:04 16984 [Note] InnoDB: Starting shutdown...
+2019-10-15  9:14:04 16984 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-15  9:14:04 16984 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-15  9:14:04 16984 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23  9:33:46 13608 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23  9:33:46 13608 [Note] InnoDB: Uses event mutexes
+2019-10-23  9:33:46 13608 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23  9:33:46 13608 [Note] InnoDB: Number of pools: 1
+2019-10-23  9:33:46 13608 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23  9:33:46 13608 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23  9:33:46 13608 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23  9:33:46 13608 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23  9:33:46 13608 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23  9:33:47 13608 [Note] InnoDB: Starting shutdown...
+2019-10-23  9:33:47 13608 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23  9:33:47 13608 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23  9:33:47 13608 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23  9:33:48 12668 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23  9:33:48 12668 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23  9:33:48 12668 [Warning] Checking table:   '.\mysql\db'
+2019-10-23  9:33:48 12668 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23  9:33:48 12668 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23  9:33:48 12668 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23  9:33:48 12668 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23  9:33:48 12668 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23  9:34:01 13768 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23  9:34:01 13768 [Note] InnoDB: Uses event mutexes
+2019-10-23  9:34:01 13768 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23  9:34:01 13768 [Note] InnoDB: Number of pools: 1
+2019-10-23  9:34:01 13768 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23  9:34:01 13768 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23  9:34:01 13768 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23  9:34:01 13768 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23  9:34:01 13768 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23  9:34:02 13768 [Note] InnoDB: Starting shutdown...
+2019-10-23  9:34:02 13768 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23  9:34:02 13768 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23  9:34:02 13768 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 12:30:13 13252 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 12:30:13 13252 [Note] InnoDB: Uses event mutexes
+2019-10-23 12:30:13 13252 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 12:30:13 13252 [Note] InnoDB: Number of pools: 1
+2019-10-23 12:30:13 13252 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 12:30:13 13252 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 12:30:13 13252 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 12:30:13 13252 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 12:30:13 13252 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 12:30:13 13252 [Note] InnoDB: Starting shutdown...
+2019-10-23 12:30:14 13252 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 12:30:14 13252 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 12:30:14 13252 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 12:30:14 13436 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 12:30:14 13436 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 12:30:14 13436 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 12:30:14 13436 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 12:30:14 13436 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 12:30:14 13436 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 12:30:14 13436 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 12:30:14 13436 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 12:30:28 11952 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 12:30:28 11952 [Note] InnoDB: Uses event mutexes
+2019-10-23 12:30:28 11952 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 12:30:28 11952 [Note] InnoDB: Number of pools: 1
+2019-10-23 12:30:28 11952 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 12:30:28 11952 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 12:30:28 11952 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 12:30:28 11952 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 12:30:28 11952 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 12:30:29 11952 [Note] InnoDB: Starting shutdown...
+2019-10-23 12:30:29 11952 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 12:30:29 11952 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 12:30:29 11952 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 12:46:20 8592 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 12:46:20 8592 [Note] InnoDB: Uses event mutexes
+2019-10-23 12:46:20 8592 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 12:46:20 8592 [Note] InnoDB: Number of pools: 1
+2019-10-23 12:46:20 8592 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 12:46:20 8592 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 12:46:20 8592 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 12:46:20 8592 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 12:46:20 8592 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 12:46:20 8592 [Note] InnoDB: Starting shutdown...
+2019-10-23 12:46:20 8592 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 12:46:20 8592 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 12:46:20 8592 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 12:46:20 1840 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 12:46:20 1840 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 12:46:20 1840 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 12:46:20 1840 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 12:46:20 1840 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 12:46:20 1840 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 12:46:20 1840 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 12:46:20 1840 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 12:46:33 8188 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 12:46:33 8188 [Note] InnoDB: Uses event mutexes
+2019-10-23 12:46:33 8188 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 12:46:33 8188 [Note] InnoDB: Number of pools: 1
+2019-10-23 12:46:33 8188 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 12:46:33 8188 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 12:46:33 8188 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 12:46:33 8188 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 12:46:33 8188 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 12:46:33 8188 [Note] InnoDB: Starting shutdown...
+2019-10-23 12:46:33 8188 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 12:46:33 8188 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 12:46:33 8188 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 13:52:10 7160 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 13:52:10 7160 [Note] InnoDB: Uses event mutexes
+2019-10-23 13:52:10 7160 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 13:52:10 7160 [Note] InnoDB: Number of pools: 1
+2019-10-23 13:52:10 7160 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 13:52:10 7160 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 13:52:10 7160 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 13:52:10 7160 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 13:52:10 7160 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 13:52:10 7160 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 13:52:11 7160 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 13:52:11 7160 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 13:52:11 7160 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 13:52:11 7160 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 13:52:11 7160 [Note] InnoDB: Starting shutdown...
+2019-10-23 13:52:11 7160 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 13:52:11 7160 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 13:52:11 7160 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 13:52:11 10932 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 13:52:11 10932 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 13:52:11 10932 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 13:52:11 10932 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 13:52:11 10932 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 13:52:11 10932 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 13:52:11 10932 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 13:52:11 10932 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 13:52:23 14352 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 13:52:23 14352 [Note] InnoDB: Uses event mutexes
+2019-10-23 13:52:23 14352 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 13:52:23 14352 [Note] InnoDB: Number of pools: 1
+2019-10-23 13:52:23 14352 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 13:52:23 14352 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 13:52:23 14352 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 13:52:23 14352 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 13:52:23 14352 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 13:52:23 14352 [Note] InnoDB: Starting shutdown...
+2019-10-23 13:52:23 14352 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 13:52:23 14352 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 13:52:23 14352 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 14:02:14 8640 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 14:02:14 8640 [Note] InnoDB: Uses event mutexes
+2019-10-23 14:02:14 8640 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 14:02:14 8640 [Note] InnoDB: Number of pools: 1
+2019-10-23 14:02:14 8640 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 14:02:14 8640 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 14:02:14 8640 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 14:02:14 8640 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 14:02:14 8640 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 14:02:15 8640 [Note] InnoDB: Starting shutdown...
+2019-10-23 14:02:15 8640 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 14:02:15 8640 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 14:02:15 8640 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 14:02:15 14996 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 14:02:15 14996 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 14:02:15 14996 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 14:02:15 14996 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 14:02:15 14996 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 14:02:15 14996 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 14:02:15 14996 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 14:02:15 14996 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 14:02:26 15084 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 14:02:26 15084 [Note] InnoDB: Uses event mutexes
+2019-10-23 14:02:26 15084 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 14:02:26 15084 [Note] InnoDB: Number of pools: 1
+2019-10-23 14:02:26 15084 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 14:02:26 15084 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 14:02:26 15084 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 14:02:27 15084 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 14:02:27 15084 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 14:02:27 15084 [Note] InnoDB: Starting shutdown...
+2019-10-23 14:02:28 15084 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 14:02:28 15084 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 14:02:28 15084 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 14:54:55 12784 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 14:54:55 12784 [Note] InnoDB: Uses event mutexes
+2019-10-23 14:54:55 12784 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 14:54:55 12784 [Note] InnoDB: Number of pools: 1
+2019-10-23 14:54:55 12784 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 14:54:55 12784 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 14:54:55 12784 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 14:54:55 12784 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 14:54:55 12784 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 14:54:55 12784 [Note] InnoDB: Starting shutdown...
+2019-10-23 14:54:55 12784 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 14:54:55 12784 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 14:54:56 12784 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 14:54:56 13784 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 14:54:56 13784 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 14:54:56 13784 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 14:54:56 13784 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 14:54:56 13784 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 14:54:56 13784 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 14:54:56 13784 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 14:54:56 13784 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 14:55:13 7252 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 14:55:13 7252 [Note] InnoDB: Uses event mutexes
+2019-10-23 14:55:13 7252 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 14:55:13 7252 [Note] InnoDB: Number of pools: 1
+2019-10-23 14:55:13 7252 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 14:55:13 7252 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 14:55:13 7252 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 14:55:13 7252 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 14:55:13 7252 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 14:55:13 7252 [Note] InnoDB: Starting shutdown...
+2019-10-23 14:55:13 7252 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 14:55:13 7252 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 14:55:13 7252 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 16:43:35 11808 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 16:43:35 11808 [Note] InnoDB: Uses event mutexes
+2019-10-23 16:43:35 11808 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 16:43:35 11808 [Note] InnoDB: Number of pools: 1
+2019-10-23 16:43:35 11808 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 16:43:35 11808 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 16:43:35 11808 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 16:43:35 11808 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 16:43:35 11808 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 16:43:35 11808 [Note] InnoDB: Starting shutdown...
+2019-10-23 16:43:36 11808 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 16:43:36 11808 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 16:43:36 11808 [Note] Plugin 'FEEDBACK' is disabled.
+2019-10-23 16:43:36 15876 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-10-23 16:43:36 15876 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-10-23 16:43:36 15876 [Warning] Checking table:   '.\mysql\db'
+2019-10-23 16:43:36 15876 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-10-23 16:43:36 15876 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-10-23 16:43:36 15876 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-10-23 16:43:36 15876 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-10-23 16:43:36 15876 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-10-23 16:43:57 14696 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-10-23 16:43:57 14696 [Note] InnoDB: Uses event mutexes
+2019-10-23 16:43:57 14696 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-23 16:43:57 14696 [Note] InnoDB: Number of pools: 1
+2019-10-23 16:43:57 14696 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-10-23 16:43:57 14696 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-23 16:43:57 14696 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-23 16:43:57 14696 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-10-23 16:43:57 14696 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-10-23 16:43:57 14696 [Note] InnoDB: Starting shutdown...
+2019-10-23 16:43:57 14696 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-10-23 16:43:57 14696 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-10-23 16:43:57 14696 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-01  9:26:46 16756 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-01  9:26:46 16756 [Note] InnoDB: Uses event mutexes
+2019-11-01  9:26:46 16756 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-01  9:26:46 16756 [Note] InnoDB: Number of pools: 1
+2019-11-01  9:26:46 16756 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-01  9:26:46 16756 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-01  9:26:46 16756 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-01  9:26:47 16756 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-01  9:26:47 16756 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-01  9:26:47 16756 [Note] InnoDB: Starting shutdown...
+2019-11-01  9:26:47 16756 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-01  9:26:47 16756 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-01  9:26:47 16756 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-01  9:26:48 15856 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-11-01  9:26:48 15856 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-11-01  9:26:48 15856 [Warning] Checking table:   '.\mysql\db'
+2019-11-01  9:26:48 15856 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-11-01  9:26:48 15856 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-11-01  9:26:48 15856 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-11-01  9:26:48 15856 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-11-01  9:26:48 15856 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-11-01  9:27:03 572 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-01  9:27:03 572 [Note] InnoDB: Uses event mutexes
+2019-11-01  9:27:03 572 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-01  9:27:03 572 [Note] InnoDB: Number of pools: 1
+2019-11-01  9:27:03 572 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-01  9:27:03 572 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-01  9:27:03 572 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-01  9:27:03 572 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-01  9:27:03 572 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-01  9:27:04 572 [Note] InnoDB: Starting shutdown...
+2019-11-01  9:27:04 572 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-01  9:27:04 572 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-01  9:27:04 572 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-05 11:16:00 4732 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-05 11:16:00 4732 [Note] InnoDB: Uses event mutexes
+2019-11-05 11:16:00 4732 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-05 11:16:00 4732 [Note] InnoDB: Number of pools: 1
+2019-11-05 11:16:00 4732 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-05 11:16:00 4732 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-05 11:16:00 4732 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-05 11:16:00 4732 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-05 11:16:00 4732 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-05 11:16:00 4732 [Note] InnoDB: Starting shutdown...
+2019-11-05 11:16:00 4732 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-05 11:16:00 4732 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-05 11:16:00 4732 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-05 11:16:01 13128 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-11-05 11:16:01 13128 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-11-05 11:16:01 13128 [Warning] Checking table:   '.\mysql\db'
+2019-11-05 11:16:01 13128 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-11-05 11:16:01 13128 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-11-05 11:16:01 13128 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-11-05 11:16:01 13128 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-11-05 11:16:01 13128 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-11-05 11:16:17 9288 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-05 11:16:17 9288 [Note] InnoDB: Uses event mutexes
+2019-11-05 11:16:17 9288 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-05 11:16:17 9288 [Note] InnoDB: Number of pools: 1
+2019-11-05 11:16:17 9288 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-05 11:16:17 9288 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-05 11:16:17 9288 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-05 11:16:17 9288 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-05 11:16:17 9288 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-05 11:16:17 9288 [Note] InnoDB: Starting shutdown...
+2019-11-05 11:16:17 9288 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-05 11:16:17 9288 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-05 11:16:17 9288 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-21 15:51:05 2188 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-21 15:51:05 2188 [Note] InnoDB: Uses event mutexes
+2019-11-21 15:51:05 2188 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-21 15:51:05 2188 [Note] InnoDB: Number of pools: 1
+2019-11-21 15:51:05 2188 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-21 15:51:05 2188 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-21 15:51:05 2188 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-21 15:51:05 2188 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-21 15:51:05 2188 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-21 15:51:05 2188 [Note] InnoDB: Starting shutdown...
+2019-11-21 15:51:05 2188 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-21 15:51:05 2188 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-21 15:51:05 2188 [Note] Plugin 'FEEDBACK' is disabled.
+2019-11-21 15:51:05 8348 [ERROR] mysqld.exe: Table '.\mysql\db' is marked as crashed and should be repaired
+2019-11-21 15:51:05 8348 [ERROR] mysqld.exe: Table 'db' is marked as crashed and should be repaired
+2019-11-21 15:51:05 8348 [Warning] Checking table:   '.\mysql\db'
+2019-11-21 15:51:05 8348 [ERROR] mysql.db: 1 client is using or hasn't closed the table properly
+2019-11-21 15:51:05 8348 [ERROR] mysqld.exe: Table '.\mysql\proxies_priv' is marked as crashed and should be repaired
+2019-11-21 15:51:05 8348 [ERROR] mysqld.exe: Table 'proxies_priv' is marked as crashed and should be repaired
+2019-11-21 15:51:05 8348 [Warning] Checking table:   '.\mysql\proxies_priv'
+2019-11-21 15:51:05 8348 [ERROR] mysql.proxies_priv: 1 client is using or hasn't closed the table properly
+2019-11-21 15:51:19 4312 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-11-21 15:51:19 4312 [Note] InnoDB: Uses event mutexes
+2019-11-21 15:51:19 4312 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-11-21 15:51:19 4312 [Note] InnoDB: Number of pools: 1
+2019-11-21 15:51:19 4312 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-11-21 15:51:19 4312 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-11-21 15:51:19 4312 [Note] InnoDB: Completed initialization of buffer pool
+2019-11-21 15:51:19 4312 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: Obtaining redo log encryption key version 1 failed (4294967295). Maybe the key or the required encryption  key management plugin was not found.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: Reading checkpoint encryption info failed.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: No valid checkpoint found (corrupted redo log). You can try --innodb-force-recovery=6 as a last resort.
+2019-11-21 15:51:19 4312 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2019-11-21 15:51:19 4312 [Note] InnoDB: Starting shutdown...
+2019-11-21 15:51:20 4312 [ERROR] Plugin 'InnoDB' init function returned error.
+2019-11-21 15:51:20 4312 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2019-11-21 15:51:20 4312 [Note] Plugin 'FEEDBACK' is disabled.

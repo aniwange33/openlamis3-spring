@@ -1,0 +1,3067 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="mattae (generated)" id="1561389521186-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="adhere">
+            <column name="adhere_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="adherehistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reason" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="adr">
+            <column autoIncrement="true" name="adr_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="organ" type="VARCHAR(75)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="adrhistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="adr" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="severity" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="screener" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-5" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="anc">
+            <column autoIncrement="true" name="anc_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="anc_num" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="unique_id" type="VARCHAR(45)"/>
+            <column name="date_enrolled_pmtct" type="date"/>
+            <column name="source_referral" type="VARCHAR(45)"/>
+            <column name="lmp" type="date"/>
+            <column name="edd" type="date"/>
+            <column name="gestational_age" type="INT"/>
+            <column name="gravida" type="INT"/>
+            <column name="parity" type="INT"/>
+            <column name="time_hiv_diagnosis" type="VARCHAR(45)"/>
+            <column name="arv_regimen_past" type="VARCHAR(100)"/>
+            <column name="arv_regimen_current" type="VARCHAR(100)"/>
+            <column name="date_arv_regimen_current" type="date"/>
+            <column name="clinic_stage" type="VARCHAR(15)"/>
+            <column name="date_confirmed_hiv" type="date"/>
+            <column name="func_status" type="VARCHAR(45)"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="cd4_ordered" type="VARCHAR(7)"/>
+            <column name="cd4" type="DOUBLE"/>
+            <column name="number_anc_visit" type="INT"/>
+            <column name="date_cd4" type="date"/>
+            <column name="viral_load_test_done" type="VARCHAR(10)"/>
+            <column name="date_viral_load" type="date"/>
+            <column name="syphilis_tested" type="VARCHAR(50)"/>
+            <column name="syphilis_test_result" type="VARCHAR(50)"/>
+            <column name="syphilis_treated" type="VARCHAR(50)"/>
+            <column name="hepatitisb_tested" type="VARCHAR(50)"/>
+            <column name="hepatitisb_test_result" type="VARCHAR(50)"/>
+            <column name="hepatitisc_tested" type="VARCHAR(50)"/>
+            <column name="hepatitisc_test_result" type="VARCHAR(50)"/>
+            <column name="date_next_appointment" type="date"/>
+            <column name="viral_load_result" type="VARCHAR(10)"/>
+            <column name="height" type="DOUBLE"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-6" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="applicationinfo">
+            <column autoIncrement="true" name="applicationinfo_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="database_version" type="VARCHAR(20)"/>
+            <column name="application_version" type="VARCHAR(20)"/>
+            <column name="date_database_update" type="date"/>
+            <column name="date_application_update" type="date"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-7" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="appointment">
+            <column autoIncrement="true" name="appointment_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="communitypharm_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_last_visit" type="date"/>
+            <column name="date_next_visit" type="date"/>
+            <column name="date_tracked" type="date"/>
+            <column name="type_tracking" type="VARCHAR(15)"/>
+            <column name="tracking_outcome" type="VARCHAR(15)"/>
+            <column name="date_agreed" type="date"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-8" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="biometric">
+            <column name="biometric_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_num" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="template" type="BLOB">
+                <constraints nullable="false"/>
+            </column>
+            <column name="template_type" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="biometric_type" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_address" type="VARCHAR(255)"/>
+            <column name="patient_phone" type="VARCHAR(255)"/>
+            <column name="patient_gender" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enrollment_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-9" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="biometric_duplicate">
+            <column name="biometric_duplicate_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id_1" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id_2" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="duplicate_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-10" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="biometric_transfer">
+            <column name="biometric_transfer_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_num" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transfer_facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transfer_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-11" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="casemanager">
+            <column autoIncrement="true" name="casemanager_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT"/>
+            <column name="fullname" type="VARCHAR(100)"/>
+            <column name="sex" type="VARCHAR(50)"/>
+            <column name="age" type="VARCHAR(30)"/>
+            <column name="phone_number" type="VARCHAR(80)"/>
+            <column name="religion" type="VARCHAR(50)"/>
+            <column name="address" type="VARCHAR(300)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="local_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-12" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="child">
+            <column autoIncrement="true" name="child_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT"/>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_id" type="BIGINT"/>
+            <column name="reference_num" type="VARCHAR(36)"/>
+            <column name="anc_id" type="BIGINT"/>
+            <column name="date_birth" type="date"/>
+            <column name="hospital_number" type="VARCHAR(25)"/>
+            <column name="surname" type="VARCHAR(45)"/>
+            <column name="other_names" type="VARCHAR(75)"/>
+            <column name="gender" type="VARCHAR(7)"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="apgar_score" type="INT"/>
+            <column name="status" type="VARCHAR(45)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="arv" type="VARCHAR(45)"/>
+            <column name="hepb" type="VARCHAR(45)"/>
+            <column name="registration_status" type="VARCHAR(70)"/>
+            <column name="arv_timing" type="VARCHAR(120)"/>
+            <column name="hbv" type="VARCHAR(45)"/>
+            <column name="mother_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-13" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="childfollowup">
+            <column autoIncrement="true" name="childfollowup_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="child_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age_visit" type="INT"/>
+            <column name="date_nvp_initiated" type="date"/>
+            <column name="age_nvp_initiated" type="INT"/>
+            <column name="date_cotrim_initiated" type="date"/>
+            <column name="age_cotrim_initiated" type="INT"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="height" type="DOUBLE"/>
+            <column name="feeding" type="VARCHAR(75)"/>
+            <column name="arv" type="VARCHAR(7)"/>
+            <column name="cotrim" type="VARCHAR(7)"/>
+            <column name="date_sample_collected" type="date"/>
+            <column name="reason_pcr" type="VARCHAR(75)"/>
+            <column name="date_sample_sent" type="date"/>
+            <column name="date_pcr_result" type="date"/>
+            <column name="pcr_result" type="VARCHAR(45)"/>
+            <column name="rapid_test" type="VARCHAR(45)"/>
+            <column name="rapid_test_result" type="VARCHAR(45)"/>
+            <column name="caregiver_given_result" type="VARCHAR(7)"/>
+            <column name="child_outcome" type="VARCHAR(45)"/>
+            <column name="referred" type="VARCHAR(45)"/>
+            <column name="date_next_visit" type="date"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="infant_outcome" type="VARCHAR(70)"/>
+            <column name="date_linked_to_art" type="date"/>
+            <column name="arv_type" type="VARCHAR(45)"/>
+            <column name="date_rapid_test" type="date"/>
+            <column name="arv_timing" type="VARCHAR(90)"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-14" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="chroniccare">
+            <column autoIncrement="true" name="chroniccare_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_type" type="VARCHAR(75)"/>
+            <column name="current_status" type="VARCHAR(75)"/>
+            <column name="clinic_stage" type="VARCHAR(15)"/>
+            <column name="pregnancy_status" type="VARCHAR(75)"/>
+            <column name="last_cd4" type="DOUBLE"/>
+            <column name="date_last_cd4" type="date"/>
+            <column name="last_viral_load" type="DOUBLE"/>
+            <column name="date_last_viral_load" type="date"/>
+            <column name="eligible_cd4" type="VARCHAR(7)"/>
+            <column name="eligible_viral_load" type="VARCHAR(7)"/>
+            <column name="cotrim_eligibility1" type="INT"/>
+            <column name="cotrim_eligibility2" type="INT"/>
+            <column name="cotrim_eligibility3" type="INT"/>
+            <column name="cotrim_eligibility4" type="INT"/>
+            <column name="cotrim_eligibility5" type="INT"/>
+            <column name="ipt" type="VARCHAR(7)"/>
+            <column name="inh" type="VARCHAR(7)"/>
+            <column name="tb_treatment" type="VARCHAR(7)"/>
+            <column name="date_started_tb_treatment" type="date"/>
+            <column name="tb_referred" type="VARCHAR(7)"/>
+            <column name="eligible_ipt" type="VARCHAR(7)"/>
+            <column name="tb_values" type="VARCHAR(75)"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="height" type="DOUBLE"/>
+            <column name="bmi" type="VARCHAR(45)"/>
+            <column name="muac" type="DOUBLE"/>
+            <column name="muac_pediatrics" type="VARCHAR(45)"/>
+            <column name="muac_pregnant" type="VARCHAR(45)"/>
+            <column name="supplementary_food" type="VARCHAR(7)"/>
+            <column name="nutritional_status_referred" type="VARCHAR(7)"/>
+            <column name="gbv1" type="VARCHAR(7)"/>
+            <column name="gbv1_referred" type="VARCHAR(7)"/>
+            <column name="gbv2" type="VARCHAR(7)"/>
+            <column name="gbv2_referred" type="VARCHAR(7)"/>
+            <column name="hypertensive" type="VARCHAR(7)"/>
+            <column name="first_hypertensive" type="VARCHAR(7)"/>
+            <column name="bp_above" type="VARCHAR(7)"/>
+            <column name="bp_referred" type="VARCHAR(7)"/>
+            <column name="diabetic" type="VARCHAR(7)"/>
+            <column name="first_diabetic" type="VARCHAR(7)"/>
+            <column name="dm_referred" type="VARCHAR(7)"/>
+            <column name="dm_values" type="VARCHAR(50)"/>
+            <column name="phdp1" type="VARCHAR(7)"/>
+            <column name="phdp1_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp2" type="VARCHAR(7)"/>
+            <column name="phdp2_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp3" type="VARCHAR(7)"/>
+            <column name="phdp3_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp4" type="VARCHAR(7)"/>
+            <column name="phdp4_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp5" type="VARCHAR(7)"/>
+            <column name="phdp5_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp6" type="INT"/>
+            <column name="phdp6_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp7" type="INT"/>
+            <column name="phdp7_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp8" type="VARCHAR(7)"/>
+            <column name="phdp8_services_provided" type="VARCHAR(7)"/>
+            <column name="phdp9_services_provided" type="VARCHAR(255)"/>
+            <column name="reproductive_intentions1" type="VARCHAR(7)"/>
+            <column name="reproductive_intentions1_referred" type="VARCHAR(7)"/>
+            <column name="reproductive_intentions2" type="VARCHAR(7)"/>
+            <column name="reproductive_intentions2_referred" type="VARCHAR(7)"/>
+            <column name="reproductive_intentions3" type="VARCHAR(7)"/>
+            <column name="reproductive_intentions3_referred" type="VARCHAR(7)"/>
+            <column name="malaria_prevention1" type="VARCHAR(7)"/>
+            <column name="malaria_prevention1_referred" type="VARCHAR(7)"/>
+            <column name="malaria_prevention2" type="VARCHAR(7)"/>
+            <column name="malaria_prevention2_referred" type="VARCHAR(7)"/>
+            <column name="communitypharm_id" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-15" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="clinic">
+            <column autoIncrement="true" name="clinic_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="clinic_stage" type="VARCHAR(15)"/>
+            <column name="func_status" type="VARCHAR(15)"/>
+            <column name="tb_status" type="VARCHAR(75)"/>
+            <column name="viral_load" type="DOUBLE"/>
+            <column name="cd4" type="DOUBLE"/>
+            <column name="cd4p" type="DOUBLE"/>
+            <column name="regimentype" type="VARCHAR(100)"/>
+            <column name="regimen" type="VARCHAR(100)"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="height" type="DOUBLE"/>
+            <column name="waist" type="DOUBLE"/>
+            <column name="bp" type="VARCHAR(7)"/>
+            <column name="pregnant" type="INT"/>
+            <column name="lmp" type="date"/>
+            <column name="breastfeeding" type="INT"/>
+            <column name="oi_screened" type="VARCHAR(5)"/>
+            <column name="sti_ids" type="VARCHAR(50)"/>
+            <column name="sti_treated" type="VARCHAR(5)"/>
+            <column name="oi_ids" type="VARCHAR(50)"/>
+            <column name="adr_screened" type="VARCHAR(5)"/>
+            <column name="adr_ids" type="VARCHAR(100)"/>
+            <column name="adherence_level" type="VARCHAR(15)"/>
+            <column name="adhere_ids" type="VARCHAR(50)"/>
+            <column name="commence" type="INT"/>
+            <column name="next_appointment" type="date"/>
+            <column name="notes" type="VARCHAR(500)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="deviceconfig_id" type="BIGINT"/>
+            <column name="gestational_age" type="VARCHAR(90)"/>
+            <column name="maternal_status_art" type="VARCHAR(90)"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-16" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="communitypharm">
+            <column autoIncrement="true" name="communitypharm_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pharmacy" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(300)"/>
+            <column name="phone" type="VARCHAR(25)"/>
+            <column name="phone1" type="VARCHAR(25)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="pin" type="VARCHAR(13)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-17" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="conversation">
+            <column autoIncrement="true" name="conversation_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="phone" type="VARCHAR(12)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_message" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="VARCHAR(200)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="originator_id" type="BIGINT"/>
+            <column name="unread" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-18" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="delivery">
+            <column autoIncrement="true" name="delivery_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_delivery" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="anc_id" type="BIGINT"/>
+            <column name="booking_status" type="INT"/>
+            <column name="rom_delivery_interval" type="VARCHAR(25)"/>
+            <column name="mode_delivery" type="VARCHAR(45)"/>
+            <column name="episiotomy" type="VARCHAR(25)"/>
+            <column name="vaginal_tear" type="VARCHAR(7)"/>
+            <column name="maternal_outcome" type="VARCHAR(25)"/>
+            <column name="gestational_age" type="INT"/>
+            <column name="time_hiv_diagnosis" type="VARCHAR(100)"/>
+            <column name="source_referral" type="VARCHAR(100)"/>
+            <column name="hepatitisb_status" type="VARCHAR(70)"/>
+            <column name="hepatitisc_status" type="VARCHAR(70)"/>
+            <column name="screen_post_partum" type="INT"/>
+            <column name="arv_regimen_past" type="VARCHAR(100)"/>
+            <column name="arv_regimen_current" type="VARCHAR(100)"/>
+            <column name="date_arv_regimen_current" type="date"/>
+            <column name="date_confirmed_hiv" type="date"/>
+            <column name="clinic_stage" type="VARCHAR(15)"/>
+            <column name="cd4_ordered" type="VARCHAR(7)"/>
+            <column name="cd4" type="DOUBLE"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-19" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="deviceconfig">
+            <column autoIncrement="true" name="deviceconfig_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="device_id" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="username" type="VARCHAR(45)"/>
+            <column name="password" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-20" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="devolve">
+            <column autoIncrement="true" name="devolve_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="communitypharm_id" type="BIGINT"/>
+            <column name="date_devolved" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type_dmoc" type="VARCHAR(15)"/>
+            <column name="viral_load_assessed" type="VARCHAR(5)"/>
+            <column name="last_viral_load" type="DOUBLE"/>
+            <column name="date_last_viral_load" type="date"/>
+            <column name="cd4_assessed" type="VARCHAR(5)"/>
+            <column name="last_cd4" type="DOUBLE"/>
+            <column name="date_last_cd4" type="date"/>
+            <column name="last_clinic_stage" type="VARCHAR(15)"/>
+            <column name="date_last_clinic_stage" type="date"/>
+            <column name="arv_dispensed" type="VARCHAR(5)"/>
+            <column name="regimentype" type="VARCHAR(100)"/>
+            <column name="regimen" type="VARCHAR(100)"/>
+            <column name="date_next_clinic" type="date"/>
+            <column name="date_next_refill" type="date"/>
+            <column name="date_last_clinic" type="date"/>
+            <column name="date_last_refill" type="date"/>
+            <column name="notes" type="VARCHAR(500)"/>
+            <column name="date_discontinued" type="date"/>
+            <column name="reason_discontinued" type="VARCHAR(25)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-21" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="dhiscodeset">
+            <column name="dhiscodeset_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code_set_nm" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lamis_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dhis_id" type="VARCHAR(36)"/>
+            <column name="description" type="VARCHAR(300)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-22" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="dhisvalue">
+            <column autoIncrement="true" name="dhisvalue_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="data_element_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="category_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="data_element_id_dhis" type="VARCHAR(36)"/>
+            <column name="category_id_dhis" type="VARCHAR(36)"/>
+            <column name="facility_id_dhis" type="VARCHAR(36)"/>
+            <column name="period" type="VARCHAR(15)"/>
+            <column name="value" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-23" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="dmscreen">
+            <column name="dmscreen_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-24" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="dmscreenhistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(100)"/>
+            <column name="value" type="VARCHAR(7)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-25" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="drug">
+            <column autoIncrement="true" name="drug_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="abbrev" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="strength" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pack_size" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="doseform" type="VARCHAR(45)"/>
+            <column name="morning" type="INT"/>
+            <column name="afternoon" type="INT"/>
+            <column name="evening" type="INT"/>
+            <column name="item_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-26" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="drugtherapy">
+            <column autoIncrement="true" name="drugtherapy_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="communitypharm_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ois" type="VARCHAR(100)"/>
+            <column name="therapy_problem_screened" type="VARCHAR(5)"/>
+            <column name="adherence_issues" type="VARCHAR(5)"/>
+            <column name="medication_error" type="VARCHAR(100)"/>
+            <column name="adrs" type="VARCHAR(100)"/>
+            <column name="severity" type="VARCHAR(45)"/>
+            <column name="icsr_form" type="VARCHAR(5)"/>
+            <column name="adr_referred" type="VARCHAR(5)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-27" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="eac">
+            <column autoIncrement="true" name="eac_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT"/>
+            <column name="patient_id" type="BIGINT"/>
+            <column name="date_eac1" type="date"/>
+            <column name="date_eac2" type="date"/>
+            <column name="date_eac3" type="date"/>
+            <column name="date_sample_collected" type="date"/>
+            <column name="notes" type="VARCHAR(500)"/>
+            <column name="last_viral_load" type="DOUBLE"/>
+            <column name="date_last_viral_load" type="date"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-28" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="eid">
+            <column autoIncrement="true" name="eid_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="labno" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mother_name" type="VARCHAR(75)"/>
+            <column name="mother_address" type="VARCHAR(100)"/>
+            <column name="mother_phone" type="VARCHAR(15)"/>
+            <column name="sender_name" type="VARCHAR(75)"/>
+            <column name="sender_designation" type="VARCHAR(75)"/>
+            <column name="sender_address" type="VARCHAR(100)"/>
+            <column name="sender_phone" type="VARCHAR(15)"/>
+            <column name="reason_pcr" type="VARCHAR(100)"/>
+            <column name="rapid_test_done" type="VARCHAR(7)"/>
+            <column name="date_rapid_test" type="date"/>
+            <column name="rapid_test_result" type="VARCHAR(15)"/>
+            <column name="mother_art_received" type="VARCHAR(45)"/>
+            <column name="mother_prophylax_received" type="VARCHAR(45)"/>
+            <column name="child_prophylax_received" type="VARCHAR(45)"/>
+            <column name="breastfed_ever" type="VARCHAR(7)"/>
+            <column name="feeding_method" type="VARCHAR(45)"/>
+            <column name="breastfed_now" type="VARCHAR(7)"/>
+            <column name="feeding_cessation_age" type="INT"/>
+            <column name="cotrim" type="VARCHAR(45)"/>
+            <column name="next_appointment" type="date"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-29" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="encounter">
+            <column autoIncrement="true" name="encounter_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="communitypharm_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="question1" type="VARCHAR(5)"/>
+            <column name="question2" type="VARCHAR(5)"/>
+            <column name="question3" type="VARCHAR(5)"/>
+            <column name="question4" type="VARCHAR(5)"/>
+            <column name="question5" type="VARCHAR(5)"/>
+            <column name="question6" type="VARCHAR(5)"/>
+            <column name="question7" type="VARCHAR(5)"/>
+            <column name="question8" type="VARCHAR(5)"/>
+            <column name="question9" type="VARCHAR(5)"/>
+            <column name="regimen1" type="VARCHAR(100)"/>
+            <column name="regimen2" type="VARCHAR(100)"/>
+            <column name="regimen3" type="VARCHAR(100)"/>
+            <column name="regimen4" type="VARCHAR(100)"/>
+            <column name="duration1" type="INT"/>
+            <column name="duration2" type="INT"/>
+            <column name="duration3" type="INT"/>
+            <column name="duration4" type="INT"/>
+            <column name="prescribed1" type="INT"/>
+            <column name="prescribed2" type="INT"/>
+            <column name="prescribed3" type="INT"/>
+            <column name="prescribed4" type="INT"/>
+            <column name="dispensed1" type="INT"/>
+            <column name="dispensed2" type="INT"/>
+            <column name="dispensed3" type="INT"/>
+            <column name="dispensed4" type="INT"/>
+            <column name="notes" type="VARCHAR(500)"/>
+            <column name="next_refill" type="date"/>
+            <column name="regimentype" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-30" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="exchange">
+            <column autoIncrement="true" name="exchange_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="patient" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="clinic" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="pharmacy" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="laboratory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="adrhistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="oihistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="adherehistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="statushistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="regimenhistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="specimen" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="eid" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="labno" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="chroniccare" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="tbscreenhistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="dmscreenhistory" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="anc" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="delivery" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="maternalfollowup" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="child" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="childfollowup" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="partnerinformation" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="nigqual" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="devolve" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="encounter" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="drugtherapy" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="appointment" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="mhtc" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="communitypharm" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="casemanager" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="patientcasemanager" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="eac" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="user" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="monitor" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="export" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="motherinformation" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-31" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="facility">
+            <column autoIncrement="true" name="facility_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_type" type="VARCHAR(45)"/>
+            <column name="address1" type="VARCHAR(45)"/>
+            <column name="address2" type="VARCHAR(45)"/>
+            <column name="phone1" type="VARCHAR(25)"/>
+            <column name="phone2" type="VARCHAR(25)"/>
+            <column name="email" type="VARCHAR(45)"/>
+            <column name="pad_hospital_num" type="INT"/>
+            <column name="day_dqa" type="INT"/>
+            <column name="active" type="INT"/>
+            <column name="partner_ids" type="VARCHAR(45)"/>
+            <column name="national_id" type="VARCHAR(45)"/>
+            <column name="datim_id" type="VARCHAR(45)"/>
+            <column name="processing" type="bit(1)"/>
+            <column name="pin" type="varchar(64)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-32" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="hts">
+            <column autoIncrement="true" name="hts_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="client_code" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_num" type="VARCHAR(25)"/>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_name" type="VARCHAR(200)"/>
+            <column name="date_visit" type="date"/>
+            <column name="referred_from" type="VARCHAR(100)"/>
+            <column name="testing_setting" type="VARCHAR(100)"/>
+            <column name="surname" type="VARCHAR(100)"/>
+            <column name="other_names" type="VARCHAR(100)"/>
+            <column name="date_birth" type="date"/>
+            <column name="age" type="INT"/>
+            <column name="age_unit" type="VARCHAR(15)"/>
+            <column name="phone" type="VARCHAR(50)"/>
+            <column name="address" type="VARCHAR(200)"/>
+            <column name="gender" type="VARCHAR(20)"/>
+            <column name="first_time_visit" type="VARCHAR(10)"/>
+            <column name="state" type="VARCHAR(100)"/>
+            <column name="lga" type="VARCHAR(200)"/>
+            <column name="marital_status" type="VARCHAR(20)"/>
+            <column name="num_children" type="INT"/>
+            <column name="num_wives" type="INT"/>
+            <column name="type_counseling" type="VARCHAR(100)"/>
+            <column name="index_client" type="VARCHAR(50)"/>
+            <column name="type_index" type="VARCHAR(50)"/>
+            <column name="index_client_code" type="VARCHAR(100)"/>
+            <column name="knowledge_assessment1" type="INT"/>
+            <column name="knowledge_assessment2" type="INT"/>
+            <column name="knowledge_assessment3" type="INT"/>
+            <column name="knowledge_assessment4" type="INT"/>
+            <column name="knowledge_assessment5" type="INT"/>
+            <column name="knowledge_assessment6" type="INT"/>
+            <column name="knowledge_assessment7" type="INT"/>
+            <column name="risk_assessment1" type="INT"/>
+            <column name="risk_assessment2" type="INT"/>
+            <column name="risk_assessment3" type="INT"/>
+            <column name="risk_assessment4" type="INT"/>
+            <column name="risk_assessment5" type="INT"/>
+            <column name="risk_assessment6" type="INT"/>
+            <column name="tb_screening1" type="INT"/>
+            <column name="tb_screening2" type="INT"/>
+            <column name="tb_screening3" type="INT"/>
+            <column name="tb_screening4" type="INT"/>
+            <column name="sti_screening1" type="INT"/>
+            <column name="sti_screening2" type="INT"/>
+            <column name="sti_screening3" type="INT"/>
+            <column name="sti_screening4" type="INT"/>
+            <column name="sti_screening5" type="INT"/>
+            <column name="hiv_test_result" type="VARCHAR(100)"/>
+            <column name="tested_hiv" type="VARCHAR(100)"/>
+            <column name="post_test1" type="INT"/>
+            <column name="post_test2" type="INT"/>
+            <column name="post_test3" type="INT"/>
+            <column name="post_test4" type="INT"/>
+            <column name="post_test5" type="INT"/>
+            <column name="post_test6" type="INT"/>
+            <column name="post_test7" type="INT"/>
+            <column name="post_test8" type="INT"/>
+            <column name="post_test9" type="INT"/>
+            <column name="post_test10" type="INT"/>
+            <column name="post_test11" type="INT"/>
+            <column name="post_test12" type="INT"/>
+            <column name="post_test13" type="INT"/>
+            <column name="post_test14" type="INT"/>
+            <column name="syphilis_test_result" type="VARCHAR(100)"/>
+            <column name="hepatitisb_test_result" type="VARCHAR(100)"/>
+            <column name="hepatitisc_test_result" type="VARCHAR(100)"/>
+            <column name="sti_referred" type="VARCHAR(100)"/>
+            <column name="tb_referred" type="VARCHAR(100)"/>
+            <column name="art_referred" type="VARCHAR(100)"/>
+            <column name="date_registration" type="date"/>
+            <column name="date_started" type="date"/>
+            <column name="note" type="VARCHAR(300)"/>
+            <column name="longitude" type="DOUBLE"/>
+            <column name="latitude" type="DOUBLE"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="deviceconfig_id" type="BIGINT"/>
+            <column name="partner_notification" type="VARCHAR(5)"/>
+            <column name="notification_counseling" type="VARCHAR(45)"/>
+            <column name="number_partner" type="INT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-33" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="indexcontact">
+            <column autoIncrement="true" name="indexcontact_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="hts_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_code" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact_type" type="VARCHAR(100)"/>
+            <column name="index_contact_code" type="VARCHAR(100)"/>
+            <column name="surname" type="VARCHAR(100)"/>
+            <column name="other_names" type="VARCHAR(100)"/>
+            <column name="date_birth" type="date"/>
+            <column name="age" type="INT"/>
+            <column name="gender" type="VARCHAR(20)"/>
+            <column name="phone" type="VARCHAR(50)"/>
+            <column name="address" type="VARCHAR(200)"/>
+            <column name="relationship" type="VARCHAR(100)"/>
+            <column name="gbv" type="VARCHAR(5)"/>
+            <column name="duration_partner" type="INT"/>
+            <column name="phone_tracking" type="VARCHAR(5)"/>
+            <column name="home_tracking" type="VARCHAR(5)"/>
+            <column name="outcome" type="VARCHAR(100)"/>
+            <column name="date_hiv_test" type="date"/>
+            <column name="hiv_status" type="VARCHAR(100)"/>
+            <column name="link_care" type="VARCHAR(5)"/>
+            <column name="partner_notification" type="VARCHAR(8)"/>
+            <column name="mode_notification" type="VARCHAR(100)"/>
+            <column name="service_provided" type="VARCHAR(300)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="INT"/>
+            <column name="deviceconfig_id" type="BIGINT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-34" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="indicator">
+            <column autoIncrement="true" name="indicator_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-35" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="indicatorvalue">
+            <column autoIncrement="true" name="indicatorvalue_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="data_element_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="category_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="report_date" type="date"/>
+            <column name="VALUE" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-36" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="item">
+            <column autoIncrement="true" name="item_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="unit_measure" type="VARCHAR(45)"/>
+            <column name="max_level" type="INT"/>
+            <column name="min_level" type="INT"/>
+            <column name="date_last_received" type="date"/>
+            <column name="date_last_issued" type="date"/>
+            <column name="date_last_audited" type="date"/>
+            <column name="balance_type" type="VARCHAR(1)"/>
+            <column name="unit_cost" type="DOUBLE"/>
+            <column name="balance" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-42" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="labno">
+            <column autoIncrement="true" name="labno_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="year" type="INT"/>
+            <column name="lastno" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-43" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="laboratory">
+            <column autoIncrement="true" name="laboratory_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_reported" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_collected" type="date"/>
+            <column name="labno" type="VARCHAR(15)"/>
+            <column name="resultab" type="VARCHAR(10)"/>
+            <column name="resultpc" type="VARCHAR(10)"/>
+            <column name="comment" type="VARCHAR(100)"/>
+            <column name="labtest_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-44" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="labtest">
+            <column autoIncrement="true" name="labtest_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="labtestcategory_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="measureab" type="VARCHAR(10)"/>
+            <column name="measurepc" type="VARCHAR(10)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-45" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="labtestcategory">
+            <column autoIncrement="true" name="labtestcategory_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="category" type="VARCHAR(75)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-46" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="lga">
+            <column autoIncrement="true" name="lga_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-47" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="maternalfollowup">
+            <column autoIncrement="true" name="maternalfollowup_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="anc_id" type="BIGINT"/>
+            <column name="body_weight" type="DOUBLE"/>
+            <column name="bp" type="VARCHAR(7)"/>
+            <column name="fundal_height" type="DOUBLE"/>
+            <column name="fetal_presentation" type="VARCHAR(25)"/>
+            <column name="date_confirmed_hiv" type="date"/>
+            <column name="time_hiv_diagnosis" type="VARCHAR(45)"/>
+            <column name="arv_regimen_past" type="VARCHAR(100)"/>
+            <column name="arv_regimen_current" type="VARCHAR(100)"/>
+            <column name="date_arv_regimen_current" type="date"/>
+            <column name="screen_post_partum" type="INT"/>
+            <column name="syphilis_tested" type="VARCHAR(7)"/>
+            <column name="syphilis_test_result" type="VARCHAR(45)"/>
+            <column name="syphilis_treated" type="VARCHAR(7)"/>
+            <column name="cd4_ordered" type="VARCHAR(45)"/>
+            <column name="cd4" type="DOUBLE"/>
+            <column name="gestational_age" type="VARCHAR(120)"/>
+            <column name="viral_load_collected" type="VARCHAR(10)"/>
+            <column name="visit_status" type="VARCHAR(120)"/>
+            <column name="date_sample_collected" type="date"/>
+            <column name="tb_status" type="VARCHAR(120)"/>
+            <column name="type_of_visit" type="VARCHAR(10)"/>
+            <column name="counsel_nutrition" type="INT"/>
+            <column name="counsel_feeding" type="INT"/>
+            <column name="counsel_family_planning" type="INT"/>
+            <column name="family_planning_method" type="VARCHAR(45)"/>
+            <column name="referred" type="VARCHAR(45)"/>
+            <column name="date_next_visit" type="date"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-48" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="message">
+            <column autoIncrement="true" name="message_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="message_type" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="days_to_appointment" type="INT"/>
+            <column name="date_to_send" type="date"/>
+            <column name="recipients" type="VARCHAR(100)"/>
+            <column name="message1" type="VARCHAR(300)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message2" type="VARCHAR(300)"/>
+            <column name="message3" type="VARCHAR(300)"/>
+            <column name="message4" type="VARCHAR(300)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-49" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="mhtc">
+            <column autoIncrement="true" name="mhtc_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="communitypharm_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="month" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="year" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="num_tested" type="INT"/>
+            <column name="num_positive" type="INT"/>
+            <column name="num_referred" type="INT"/>
+            <column name="num_onsite_visit" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-50" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="miss">
+            <column name="facility_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-51" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="monitor">
+            <column autoIncrement="true" name="monitor_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="entity_id" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="table_name" type="VARCHAR(75)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="device_type" type="VARCHAR(40)"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-52" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="motherinformation">
+            <column autoIncrement="true" name="motherinformation_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT"/>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_num" type="VARCHAR(25)"/>
+            <column name="unique_id" type="VARCHAR(36)"/>
+            <column name="surname" type="VARCHAR(45)"/>
+            <column name="other_names" type="VARCHAR(75)"/>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="phone" type="VARCHAR(60)"/>
+            <column name="art_status" type="VARCHAR(120)"/>
+            <column name="entry_point" type="VARCHAR(120)"/>
+            <column name="anc_number" type="VARCHAR(120)"/>
+            <column name="in_facility" type="VARCHAR(40)"/>
+            <column name="date_started" type="date"/>
+            <column name="date_confirmed_hiv" type="date"/>
+            <column name="time_hiv_diagnosis" type="VARCHAR(35)"/>
+            <column name="date_enrolled_pmtct" type="date"/>
+            <column name="regimen" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-53" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="ndrcodeset">
+            <column name="code_set_nm" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code_description" type="VARCHAR(200)"/>
+            <column name="alt_description" type="VARCHAR(200)"/>
+            <column name="sys_description" type="VARCHAR(200)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-54" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="ndrmessagelog">
+            <column name="message_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_name" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="identifier" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-55" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="nigqual">
+            <column autoIncrement="true" name="nigqual_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="portal_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="review_period_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="thermatic_area" type="VARCHAR(2)"/>
+            <column name="reporting_date_begin" type="date"/>
+            <column name="reporting_date_end" type="date"/>
+            <column name="population" type="INT"/>
+            <column name="sample_size" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-56" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="oi">
+            <column autoIncrement="true" name="oi_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="clinic_stage" type="VARCHAR(15)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-57" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="oihistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="oi" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-58" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="participant">
+            <column autoIncrement="true" name="participant_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="phone" type="VARCHAR(12)"/>
+            <column name="age" type="INT"/>
+            <column name="gender" type="VARCHAR(7)"/>
+            <column name="location" type="VARCHAR(100)"/>
+            <column name="active" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-59" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="partnerinformation">
+            <column autoIncrement="true" name="partnerinformation_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date"/>
+            <column name="partner_notification" type="VARCHAR(7)"/>
+            <column name="partner_hiv_status" type="VARCHAR(25)"/>
+            <column name="partner_referred" type="VARCHAR(45)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-60" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="patient">
+            <column autoIncrement="true" name="patient_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_num" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="unique_id" type="VARCHAR(36)"/>
+            <column name="surname" type="VARCHAR(45)"/>
+            <column name="other_names" type="VARCHAR(75)"/>
+            <column name="gender" type="VARCHAR(7)"/>
+            <column name="date_birth" type="date"/>
+            <column name="age" type="INT"/>
+            <column name="age_unit" type="VARCHAR(15)"/>
+            <column name="marital_status" type="VARCHAR(15)"/>
+            <column name="education" type="VARCHAR(25)"/>
+            <column name="occupation" type="VARCHAR(25)"/>
+            <column name="address" type="VARCHAR(100)"/>
+            <column name="phone" type="VARCHAR(25)"/>
+            <column name="state" type="VARCHAR(45)"/>
+            <column name="lga" type="VARCHAR(45)"/>
+            <column name="next_kin" type="VARCHAR(75)"/>
+            <column name="address_kin" type="VARCHAR(100)"/>
+            <column name="phone_kin" type="VARCHAR(25)"/>
+            <column name="relation_kin" type="VARCHAR(25)"/>
+            <column name="entry_point" type="VARCHAR(15)"/>
+            <column name="target_group" type="VARCHAR(15)"/>
+            <column name="date_confirmed_hiv" type="date"/>
+            <column name="date_enrolled_pmtct" type="date"/>
+            <column name="source_referral" type="VARCHAR(100)"/>
+            <column name="time_hiv_diagnosis" type="VARCHAR(35)"/>
+            <column name="tb_status" type="VARCHAR(75)"/>
+            <column name="pregnant" type="INT"/>
+            <column name="breastfeeding" type="INT"/>
+            <column name="date_registration" type="date"/>
+            <column name="status_registration" type="VARCHAR(75)"/>
+            <column name="enrollment_setting" type="VARCHAR(15)"/>
+            <column name="casemanager_id" type="BIGINT"/>
+            <column name="communitypharm_id" type="BIGINT"/>
+            <column name="date_started" type="date"/>
+            <column name="current_status" type="VARCHAR(75)"/>
+            <column name="date_current_status" type="date"/>
+            <column name="regimentype" type="VARCHAR(100)"/>
+            <column name="regimen" type="VARCHAR(100)"/>
+            <column name="last_clinic_stage" type="VARCHAR(15)"/>
+            <column name="last_viral_load" type="DOUBLE"/>
+            <column name="last_cd4" type="DOUBLE"/>
+            <column name="last_cd4p" type="DOUBLE"/>
+            <column name="date_last_cd4" type="date"/>
+            <column name="date_last_viral_load" type="date"/>
+            <column name="viral_load_due_date" type="date"/>
+            <column name="viral_load_type" type="VARCHAR(15)"/>
+            <column name="date_last_refill" type="date"/>
+            <column name="date_next_refill" type="date"/>
+            <column name="last_refill_duration" type="INT"/>
+            <column name="last_refill_setting" type="VARCHAR(15)"/>
+            <column name="date_last_clinic" type="date"/>
+            <column name="date_next_clinic" type="date"/>
+            <column name="date_tracked" type="date"/>
+            <column name="outcome" type="VARCHAR(75)"/>
+            <column name="cause_death" type="VARCHAR(100)"/>
+            <column name="agreed_date" type="date"/>
+            <column name="send_message" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP"/>
+            <column name="user_id" type="BIGINT"/>
+            <column name="deviceconfig_id" type="BIGINT"/>
+            <column name="hts_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-61" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="patientcasemanager">
+            <column autoIncrement="true" name="patientcasemanager_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT"/>
+            <column name="casemanager_id" type="BIGINT"/>
+            <column name="patient_id" type="BIGINT"/>
+            <column name="date_assigned" type="date"/>
+            <column name="action" type="VARCHAR(120)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-62" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="performance">
+            <column autoIncrement="true" name="performance_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="year" type="INT"/>
+            <column name="month" type="INT"/>
+            <column name="denominator" type="INT"/>
+            <column name="numerator" type="INT"/>
+            <column name="indicator_id" type="INT"/>
+            <column name="facility_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-63" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="pharmacy">
+            <column autoIncrement="true" name="pharmacy_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="duration" type="INT"/>
+            <column name="morning" type="DOUBLE"/>
+            <column name="afternoon" type="DOUBLE"/>
+            <column name="evening" type="DOUBLE"/>
+            <column name="adr_screened" type="VARCHAR(5)"/>
+            <column name="adr_ids" type="VARCHAR(100)"/>
+            <column name="prescrip_error" type="INT"/>
+            <column name="adherence" type="INT"/>
+            <column name="next_appointment" type="date"/>
+            <column name="regimentype_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regimen_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regimendrug_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-64" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="prescription">
+            <column autoIncrement="true" name="prescription_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT"/>
+            <column name="patient_id" type="BIGINT"/>
+            <column name="date_visit" type="date"/>
+            <column name="prescription_type" type="VARCHAR(100)"/>
+            <column name="labtest_id" type="BIGINT"/>
+            <column name="regimen_id" type="BIGINT"/>
+            <column name="regimentype_id" type="BIGINT"/>
+            <column name="duration" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-65" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="privilege">
+            <column autoIncrement="true" name="privilege_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-66" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="regimen">
+            <column autoIncrement="true" name="regimen_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="composition" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regimentype_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-67" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="regimendrug">
+            <column autoIncrement="true" name="regimendrug_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="regimen_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="drug_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-68" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="regimenhistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regimentype" type="VARCHAR(100)"/>
+            <column name="regimen" type="VARCHAR(100)"/>
+            <column name="reason_switched_subs" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-69" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="regimenresolver">
+            <column name="regimensys" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="regimen" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-70" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="regimentype">
+            <column autoIncrement="true" name="regimentype_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-71" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="samplesize">
+            <column name="lower" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="upper" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="size" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-72" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="schedule">
+            <column autoIncrement="true" name="schedule_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="monday" type="INT"/>
+            <column name="tuesday" type="INT"/>
+            <column name="wednesday" type="INT"/>
+            <column name="thursday" type="INT"/>
+            <column name="friday" type="INT"/>
+            <column name="saturday" type="INT"/>
+            <column name="sunday" type="INT"/>
+            <column name="service" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-73" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="sent">
+            <column autoIncrement="true" name="sent_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="phone" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="VARCHAR(300)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-74" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="sequencer">
+            <column name="phone" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="INT"/>
+            <column name="gender" type="VARCHAR(7)"/>
+            <column name="location" type="VARCHAR(200)"/>
+            <column name="active" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-75" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="specimen">
+            <column autoIncrement="true" name="specimen_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lga_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="treatment_unit_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="specimen_type" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="labno" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="barcode" type="VARCHAR(15)"/>
+            <column name="date_received" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_collected" type="date"/>
+            <column name="date_assay" type="date"/>
+            <column name="date_reported" type="date"/>
+            <column name="date_dispatched" type="date"/>
+            <column name="quality_cntrl" type="INT"/>
+            <column name="result" type="VARCHAR(25)"/>
+            <column name="reason_no_test" type="VARCHAR(100)"/>
+            <column name="hospital_num" type="VARCHAR(25)"/>
+            <column name="surname" type="VARCHAR(45)"/>
+            <column name="other_names" type="VARCHAR(75)"/>
+            <column name="gender" type="VARCHAR(7)"/>
+            <column name="date_birth" type="date"/>
+            <column name="age" type="INT"/>
+            <column name="age_unit" type="VARCHAR(15)"/>
+            <column name="address" type="VARCHAR(100)"/>
+            <column name="phone" type="VARCHAR(25)"/>
+            <column name="user_id" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-76" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="state">
+            <column autoIncrement="true" name="state_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-77" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="status">
+            <column autoIncrement="true" name="status_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(75)"/>
+            <column name="group_num" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-78" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="statushistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="current_status" type="VARCHAR(75)"/>
+            <column name="date_current_status" type="date"/>
+            <column name="outcome" type="VARCHAR(100)"/>
+            <column name="agreed_date" type="date"/>
+            <column name="reason_interrupt" type="VARCHAR(100)"/>
+            <column name="date_tracked" type="date"/>
+            <column name="cause_death" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-79" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="sti">
+            <column autoIncrement="true" name="sti_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-80" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="synchistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_name" type="VARCHAR(180)"/>
+            <column name="upload_date" type="date"/>
+            <column name="tables_uploaded" type="TEXT"/>
+            <column name="num_files_uploaded" type="INT"/>
+            <column name="upload_completed" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="upload_time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-81" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="tbscreen">
+            <column name="tbscreen_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-82" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="tbscreenhistory">
+            <column autoIncrement="true" name="history_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_visit" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(100)"/>
+            <column name="value" type="VARCHAR(7)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-83" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="unsent">
+            <column autoIncrement="true" name="unsent_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="phone" type="VARCHAR(25)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="VARCHAR(300)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expire" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-84" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="user">
+            <column autoIncrement="true" name="user_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="facility_id" type="BIGINT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="time_login" type="TIMESTAMP"/>
+            <column defaultValue="now()" name="time_stamp" type="TIMESTAMP"/>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="now()" name="time_uploaded" type="TIMESTAMP"/>
+            <column name="uuid" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="201908021141030-01" author="mattae">
+        <createTable tableName="authority">
+            <column name="name" type="varchar(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_authority">
+            <column name="user_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="authority_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="user_id, authority_name" tableName="user_authority"/>
+
+        <addForeignKeyConstraint baseColumnNames="authority_name"
+                                 baseTableName="user_authority"
+                                 constraintName="fk_authority_name"
+                                 referencedColumnNames="name"
+                                 referencedTableName="authority"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="user_authority"
+                                 constraintName="fk_user_id"
+                                 referencedColumnNames="user_id"
+                                 referencedTableName="user"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-86" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="validated">
+            <column autoIncrement="true" name="validated_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="patient_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="table_validated" type="VARCHAR(90)"/>
+            <column name="record_id" type="VARCHAR(100)"/>
+            <column name="created_by" type="VARCHAR(100)"/>
+            <column name="validated_by" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="date_validated" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_stamp" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded" type="INT"/>
+            <column defaultValue="0000-00-00 00:00:00" name="time_uploaded" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-87" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="biometric_id" constraintName="PRIMARY" tableName="biometric"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-88" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="biometric_duplicate_id" constraintName="PRIMARY" tableName="biometric_duplicate"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-89" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="biometric_transfer_id" constraintName="PRIMARY" tableName="biometric_transfer"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-90" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="dhiscodeset_id" constraintName="PRIMARY" tableName="dhiscodeset"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-91" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="dmscreen_id" constraintName="PRIMARY" tableName="dmscreen"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-96" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="facility_name" constraintName="PRIMARY" tableName="miss"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-97" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="code_set_nm, code" constraintName="PRIMARY" tableName="ndrcodeset"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-98" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="message_id" constraintName="PRIMARY" tableName="ndrmessagelog"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-99" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="regimensys, regimen" constraintName="PRIMARY" tableName="regimenresolver"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-100" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="lower, upper, size" constraintName="PRIMARY" tableName="samplesize"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-101" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="phone" constraintName="PRIMARY" tableName="sequencer"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-102" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addPrimaryKey columnNames="tbscreen_id" constraintName="PRIMARY" tableName="tbscreen"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-103" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="chroniccare_id" constraintName="primary_key_1" tableName="chroniccare"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-104" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patientcasemanager_id" constraintName="primary_key_11"
+                             tableName="patientcasemanager"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-105" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="pharmacy_id" constraintName="primary_key_11" tableName="pharmacy"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-106" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_12" tableName="dmscreenhistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-107" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="drug_id" constraintName="primary_key_17" tableName="drug"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-108" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="regimen_id" constraintName="primary_key_172" tableName="regimen"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-109" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="sti_id" constraintName="primary_key_18" tableName="sti"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-110" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="drugtherapy_id" constraintName="primary_key_1a" tableName="drugtherapy"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-111" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="child_id" constraintName="primary_key_1e" tableName="child"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-112" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="nigqual_id" constraintName="primary_key_2" tableName="nigqual"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-113" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="facility_id" constraintName="primary_key_20" tableName="facility"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-114" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="indicator_id" constraintName="primary_key_24" tableName="indicator"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-115" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="devolve_id" constraintName="primary_key_27" tableName="devolve"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-116" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="state_id" constraintName="primary_key_3" tableName="state"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-117" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="pharmacy_id" constraintName="primary_key_34" tableName="pharmacy"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-118" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_34f" tableName="regimenhistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-119" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="item_id" constraintName="primary_key_3b" tableName="item"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-120" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="motherinformation_id" constraintName="primary_key_3ce"
+                             tableName="motherinformation"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-121" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_3f" tableName="oihistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-122" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="schedule_id" constraintName="primary_key_6" tableName="schedule"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-123" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="sent_id" constraintName="primary_key_60" tableName="sent"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-124" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="eid_id" constraintName="primary_key_6008" tableName="eid"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-125" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="encounter_id" constraintName="primary_key_633" tableName="encounter"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-126" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="laboratory_id" constraintName="primary_key_633" tableName="laboratory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-127" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_633" tableName="oihistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-128" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="prescription_id" constraintName="primary_key_65" tableName="prescription"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-129" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="regimentype_id" constraintName="primary_key_6d" tableName="regimentype"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-130" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="oi_id" constraintName="primary_key_7" tableName="oi"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-131" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="delivery_id" constraintName="primary_key_75" tableName="delivery"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-132" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="anc_id" constraintName="primary_key_79" tableName="anc"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-133" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="labno_id" constraintName="primary_key_7f" tableName="labno"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-134" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="validated_id" constraintName="primary_key_8" tableName="validated"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-135" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_82" tableName="tbscreenhistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-136" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="specimen_id" constraintName="primary_key_8437" tableName="specimen"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-137" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id" constraintName="primary_key_84a" tableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-138" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="hts_id" constraintName="primary_key_8a1" tableName="hts"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-139" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="indexcontact_id" constraintName="primary_key_8a2" tableName="indexcontact"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-140" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_8a3" tableName="synchistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-141" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="casemanager_id" constraintName="primary_key_9c" tableName="casemanager"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-142" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="monitor_id" constraintName="primary_key_a" tableName="monitor"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-143" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="unsent_id" constraintName="primary_key_a6" tableName="unsent"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-144" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_ab" tableName="adherehistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-145" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="lga_id" constraintName="primary_key_b" tableName="lga"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-146" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="communitypharm_id" constraintName="primary_key_b0"
+                             tableName="communitypharm"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-147" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="status_id" constraintName="primary_key_b7" tableName="status"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-148" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_b9" tableName="adrhistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-149" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="laboratory_id" constraintName="primary_key_bc4" tableName="laboratory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-151" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="appointment_id" constraintName="primary_key_c" tableName="appointment"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-152" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="user_id" constraintName="primary_key_c00" tableName="user"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-153" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="partnerinformation_id" constraintName="primary_key_c4"
+                             tableName="partnerinformation"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-154" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="labtestcategory_id" constraintName="primary_key_c5"
+                             tableName="labtestcategory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-155" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="uuid" constraintName="primary_key_c5" tableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-156" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="mhtc_id" constraintName="primary_key_c7" tableName="mhtc"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-157" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="history_id" constraintName="primary_key_c8" tableName="statushistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-158" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="childfollowup_id" constraintName="primary_key_c9" tableName="childfollowup"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-159" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="participant_id" constraintName="primary_key_ca" tableName="participant"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-160" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="labtest_id" constraintName="primary_key_cb" tableName="labtest"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-161" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="dhiscodeset_id" constraintName="primary_key_cd" tableName="dhiscodeset"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-162" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="conversation_id" constraintName="primary_key_d" tableName="conversation"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-163" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="dhisvalue_id" constraintName="primary_key_dh" tableName="dhisvalue"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-164" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="regimendrug_id" constraintName="primary_key_e" tableName="regimendrug"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-165" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="eac_id" constraintName="primary_key_e4" tableName="eac"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-166" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="privilege_id" constraintName="primary_key_e6d" tableName="privilege"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-167" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="message_id" constraintName="primary_key_e8" tableName="message"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-168" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="adr_id" constraintName="primary_key_f" tableName="adr"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-169" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="exchange_id" constraintName="primary_key_f6" tableName="exchange"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-170" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="maternalfollowup_id" constraintName="primary_key_f7"
+                             tableName="maternalfollowup"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-171" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="clinic_id" constraintName="primary_key_fc" tableName="clinic"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-172" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="indicatorvalue_id" constraintName="primary_key_fd"
+                             tableName="indicatorvalue"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-173" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="performance_id" constraintName="primary_key_fe" tableName="performance"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-174" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="hospital_num, facility_id" constraintName="ux_facility_patient"
+                             tableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521187-174" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_reported, labtest_id"
+                             constraintName="ux_facility_laboratory" tableName="laboratory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521188-174" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_visit" constraintName="ux_facility_clinic"
+                             tableName="clinic"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-175" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_delivery" constraintName="ux_facility_delivery"
+                             tableName="delivery"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-176" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_eac1" constraintName="ux_facility_eac"
+                             tableName="eac"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-177" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, regimendrug_id, facility_id, date_visit"
+                             constraintName="ux_facility_pharmacy" tableName="pharmacy"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-178" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_visit, regimentype, regimen"
+                             constraintName="ux_facility_regimen" tableName="regimenhistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-179" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addUniqueConstraint columnNames="patient_id, facility_id, date_current_status, current_status"
+                             constraintName="ux_facility_status" tableName="statushistory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-182" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_adherehistory_patient1_index_c" tableName="adherehistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-183" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_adrhistory_patient1_index_c" tableName="adrhistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-184" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_anc_patient1_index_c" tableName="anc">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-185" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_appointment_patient1_index_c" tableName="appointment">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-187" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_child_mother1_index_c" tableName="child">
+            <column name="mother_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-188" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_childfollowup_child1_index_c" tableName="childfollowup">
+            <column name="child_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-189" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_chroniccare_patient1_index_c" tableName="chroniccare">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-190" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_clinic_patient1_index_c" tableName="clinic">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-191" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_delivery_patient1_index_c" tableName="delivery">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-192" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_devolve_patient1_index_2" tableName="devolve">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-193" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_dmscreenhistory_patient1_index_c" tableName="dmscreenhistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-194" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_drugtherapy_patient1_index_b" tableName="drugtherapy">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-195" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_eac_patient1_index_e" tableName="eac">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-196" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_encounter_patient1_index_6" tableName="encounter">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-197" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_facility_lga1_index_2" tableName="facility">
+            <column name="lga_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-198" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_indexcontact_hts" tableName="indexcontact">
+            <column name="hts_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-199" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_labtest_labtestcategory1_index_2" tableName="labtest">
+            <column name="labtestcategory_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-200" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_lga_state1_index_1" tableName="lga">
+            <column name="state_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-201" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_maternalfollowup_patient1_index_2" tableName="maternalfollowup">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-202" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_nigqual_facility1_index_2" tableName="motherinformation">
+            <column name="facility_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-203" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_nigqual_patient1_index_2" tableName="nigqual">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-204" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_oihistory_patient1" tableName="oihistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-205" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_partnerinformation_patient1_index_2" tableName="partnerinformation">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-206" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_patient_facility1_index_8" tableName="patient">
+            <column name="facility_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-207" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_patientcasemanager_patient1_index_1" tableName="patientcasemanager">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-208" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_prescription_patient1_index_a" tableName="prescription">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-209" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_regimen_has_drug_drug1_index_a" tableName="regimendrug">
+            <column name="drug_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-210" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_regimen_has_drug_regimen1_index_a" tableName="regimendrug">
+            <column name="regimen_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-211" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_regimen_regimentype1_index_6" tableName="regimen">
+            <column name="regimentype_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-212" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_regimenhistory_patient1_index_2" tableName="regimenhistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-213" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_schedule_facility1_index_5" tableName="schedule">
+            <column name="facility_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-214" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_statushistory_patient1_index_2" tableName="statushistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-215" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="fk_tbscreenhistory_patient1_index_2" tableName="tbscreenhistory">
+            <column name="patient_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-218" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="idx_clinic_date" tableName="clinic">
+            <column name="patient_id"/>
+            <column name="date_visit"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-219" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="idx_hospital_num" tableName="patient">
+            <column name="hospital_num"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-220" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="idx_laboratory_date" tableName="laboratory">
+            <column name="patient_id"/>
+            <column name="date_reported"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-221" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="idx_patient_name" tableName="patient">
+            <column name="surname"/>
+            <column name="other_names"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-224" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="idx_pharmacy_date" tableName="pharmacy">
+            <column name="patient_id"/>
+            <column name="date_visit"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-225" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="adherehistory"
+                                 constraintName="fk_adherehistory_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-226" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="adrhistory"
+                                 constraintName="fk_adrhistory_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-227" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="anc" constraintName="fk_anc_patient1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-228" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="appointment"
+                                 constraintName="fk_appointment_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-230" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="mother_id" baseTableName="child" constraintName="fk_child_mother1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="motherinformation_id" referencedTableName="motherinformation"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-231" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="child_id" baseTableName="childfollowup"
+                                 constraintName="fk_childfollowup_child1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="child_id"
+                                 referencedTableName="child"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-232" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="chroniccare"
+                                 constraintName="fk_chroniccare_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-233" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="clinic" constraintName="fk_clinic_patient1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-234" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="delivery"
+                                 constraintName="fk_delivery_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-235" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="devolve"
+                                 constraintName="fk_devolve_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-236" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="dmscreenhistory"
+                                 constraintName="fk_dmscreenhistory_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-237" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="drugtherapy"
+                                 constraintName="fk_drugtherapy_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-238" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="eac" constraintName="fk_eac_patient1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-239" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="encounter"
+                                 constraintName="fk_encounter_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-241" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="lga_id" baseTableName="facility" constraintName="fk_facility_lga1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="lga_id" referencedTableName="lga"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-242" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="hts_id" baseTableName="indexcontact"
+                                 constraintName="fk_indexcontact_hts" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="hts_id"
+                                 referencedTableName="hts"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-243" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="laboratory"
+                                 constraintName="fk_laboratory_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-244" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="labtestcategory_id" baseTableName="labtest"
+                                 constraintName="fk_labtest_labtestcategory1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="labtestcategory_id" referencedTableName="labtestcategory"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-245" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="state_id" baseTableName="lga" constraintName="fk_lga_state1"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="state_id" referencedTableName="state"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-246" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="maternalfollowup"
+                                 constraintName="fk_maternalfollowup_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-247" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="facility_id" baseTableName="motherinformation"
+                                 constraintName="fk_motherinformation_facility1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="facility_id" referencedTableName="facility"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-248" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="nigqual"
+                                 constraintName="fk_nigqual_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-249" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="oihistory"
+                                 constraintName="fk_oihistory_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-250" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="partnerinformation"
+                                 constraintName="fk_partnerinformation_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-251" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="facility_id" baseTableName="patient"
+                                 constraintName="fk_patient_facility1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="facility_id"
+                                 referencedTableName="facility"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-252" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="patientcasemanager"
+                                 constraintName="fk_patientcasemanager_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-253" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="pharmacy"
+                                 constraintName="fk_pharmacy_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-254" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="prescription"
+                                 constraintName="fk_prescription_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-255" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="drug_id" baseTableName="regimendrug"
+                                 constraintName="fk_regimen_has_drug_drug1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="drug_id"
+                                 referencedTableName="drug"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-256" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="regimen_id" baseTableName="regimendrug"
+                                 constraintName="fk_regimen_has_drug_regimen1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="regimen_id" referencedTableName="regimen"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-257" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="regimentype_id" baseTableName="regimen"
+                                 constraintName="fk_regimen_regimentype1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="regimentype_id"
+                                 referencedTableName="regimentype"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-258" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="regimenhistory"
+                                 constraintName="fk_regimenhistory_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-259" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="facility_id" baseTableName="schedule"
+                                 constraintName="fk_schedule_facility1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="facility_id"
+                                 referencedTableName="facility"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-260" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="statushistory"
+                                 constraintName="fk_statushistory_patient1" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="patient_id"
+                                 referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae (generated)" id="1561389521186-261" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="tbscreenhistory"
+                                 constraintName="fk_tbscreenhistory_patient1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="patient_id" referencedTableName="patient"/>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-01">
+        <loadData encoding="UTF-8"
+                  file="liquibase/state.csv"
+                  separator=";"
+                  tableName="state">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-02">
+        <loadData encoding="UTF-8"
+                  file="liquibase/lga.csv"
+                  separator=";"
+                  tableName="lga">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-03">
+        <loadData encoding="UTF-8"
+                  file="liquibase/facility.csv"
+                  separator=";"
+                  tableName="facility">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-04">
+        <loadData encoding="UTF-8"
+                  file="liquibase/item.csv"
+                  separator=";"
+                  tableName="item">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-05">
+        <loadData encoding="UTF-8"
+                  file="liquibase/drug.csv"
+                  separator=";"
+                  tableName="drug">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-06">
+        <loadData encoding="UTF-8"
+                  file="liquibase/labtestcategory.csv"
+                  separator=";"
+                  tableName="labtestcategory">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-07">
+        <loadData encoding="UTF-8"
+                  file="liquibase/labtest.csv"
+                  separator=";"
+                  tableName="labtest">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-08">
+        <loadData encoding="UTF-8"
+                  file="liquibase/regimentype.csv"
+                  separator=";"
+                  tableName="regimentype">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-09">
+        <loadData encoding="UTF-8"
+                  file="liquibase/regimen.csv"
+                  separator=";"
+                  tableName="regimen">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-10">
+        <loadData encoding="UTF-8"
+                  file="liquibase/regimendrug.csv"
+                  separator=";"
+                  tableName="regimendrug">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-11">
+        <loadData encoding="UTF-8"
+                  file="liquibase/adhere.csv"
+                  separator=";"
+                  tableName="adhere">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-12">
+        <loadData encoding="UTF-8"
+                  file="liquibase/community_pharm.csv"
+                  separator=";"
+                  tableName="communitypharm">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-13">
+        <loadData encoding="UTF-8"
+                  file="liquibase/oi.csv"
+                  separator=";"
+                  tableName="oi">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190625081612-14">
+        <loadData encoding="UTF-8"
+                  file="liquibase/user.csv"
+                  separator=";"
+                  tableName="user">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190802143112-01">
+        <loadData encoding="UTF-8"
+                  file="liquibase/authority.csv"
+                  separator=";"
+                  tableName="authority">
+        </loadData>
+    </changeSet>
+    <changeSet author="mattae" id="20190802143112-02">
+        <loadData encoding="UTF-8"
+                  file="liquibase/user_authority.csv"
+                  separator=";"
+                  tableName="user_authority">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

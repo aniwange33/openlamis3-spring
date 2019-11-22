@@ -1,0 +1,157 @@
+/*
+ Theme Name: Websparrow Bootstrap 4 Theme 2018
+ Theme URI: http://www.websparrow.org
+ Description: Theme for websparrow.org
+ Version: 1.1
+ Author: Atul Rai
+ Author URI: http://www.websparrow.org
+ */
+
+a{color:#0056b3}
+i{color: #337AB7;}
+em{color: #337AB7;}
+.blog-main{}
+.blog-post {margin-bottom: 2rem;}
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+.blog-post-meta {
+    margin-bottom: -0.75rem;
+    color: #999;
+    font-size: 14px;
+}
+.blog-footer {
+    padding: 1.5rem 0;
+    color: #999;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p {
+    margin-bottom: 0px;;
+    margin-top: 0px
+}
+.blog-footer-link{font-size: 20px !important;}
+.display-4 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+}
+
+/* custom colour  */
+.bg-light-green{
+    background-color: #5fba7d;
+    border-color: #5fba7d;
+    color: #fff;
+}
+.bg-grey {background-color: #F8F8F8;}
+.bg-yellow{background-color: #FFF8DC;}
+
+.well{
+    background-color: #F9F9F9;
+    border: 1px solid #DDD;
+    margin: 20px 0;
+    margin-bottom: 1rem;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.download {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #CEEBCE;
+    background: #DFF7DF;
+    margin-bottom: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.content-nav{margin-left: 30%; color: #8a3b3b; font-size: 20px;}
+
+/*for old pages*/
+.source-code-name-div{
+    background-color: #E6E6FC;
+    border: 1px solid #D1D1E8;
+    padding: 8px 8px 8px 14px;
+    border-bottom: none;
+    margin-top: 15px;
+    margin-bottom: -8px;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+.source-code-name-div + pre {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.source-code{font-size: 14.5px; border: 1px solid #ccc; border-radius: 4px;}
+/*end*/
+
+.source-code-name{
+    background-color: #E6E6FC;
+    border: 1px solid #D1D1E8;
+    padding: 8px 8px 8px 14px;
+    border-bottom: none;
+    margin-top: 15px;
+    margin-bottom: -8px;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+.source-code-name + pre {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.line-numbers{font-size: 14.5px; border: 1px solid #ccc; border-radius: 4px;}
+
+
+.border-dashed{position: relative;padding: 20px;margin-bottom: 20px;color: #777;border: 2px dashed #eee;border-radius: 4px;}
+
+blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #F8F8F8;
+    border-left: 3px solid #00adf0;
+    /*
+	font-size: 15px;
+    font-family: initial;
+	*/
+    padding-bottom: 1px;
+}
+.interview-q{font-size: 19px;color: #610B4B;}
+.interview-a{}
+.author-info-box{margin-bottom: 20px; padding-top: 10px; border-left: 5px solid #337ab7;}
+.author-info-img{margin-left: -17px; float: left;}
+.author-info-content{margin-top: -15px; margin-left: -15px;}
+#back2TopBtn{
+    display: none;
+    position: fixed;
+    bottom: 87px;
+    right: 16px;
+    z-index: 99;
+    border: none;    outline: none;
+
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+}
+#back2TopBtn:hover {
+    background-color: #fbbc05;
+}

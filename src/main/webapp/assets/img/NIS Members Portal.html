@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://member.nisngr.net/application/new/type/1 -->
+<html lang="en" class="gr__member_nisngr_net"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Required meta tags --><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Meta --><meta name="description" content=""><meta name="author" content=""><title>NIS Members Portal</title><link rel="shortcut icon" href="http://member.nisngr.net/favicon.ico"><!--CSS--><link rel="stylesheet" type="text/css" href="./NIS Members Portal_files/noscript.css" id="noscript" media="screen,all"><!--  <link rel="stylesheet" type="text/css" href="http://member.nisngr.net/application/views/nisngr/static/styles/myforms.css" media="screen,all"  /> --><link rel="stylesheet" type="text/css" href="./NIS Members Portal_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="./NIS Members Portal_files/print.css" media="print"><!-- Custom CSS --><link href="./NIS Members Portal_files/style.min.css" rel="stylesheet"><!-- vendor css --><link rel="stylesheet" href="./NIS Members Portal_files/style.css"><link href="./NIS Members Portal_files/font-awesome.css" rel="stylesheet"><link href="./NIS Members Portal_files/ionicons.css" rel="stylesheet"><link href="./NIS Members Portal_files/jquery.dataTables.css" rel="stylesheet"><link href="./NIS Members Portal_files/select2.min.css" rel="stylesheet"><link href="./NIS Members Portal_files/c3.min.css" rel="stylesheet"><!-- Slim CSS --><link rel="stylesheet" href="./NIS Members Portal_files/slim.css"><script src="./NIS Members Portal_files/jquery-3.3.1.js.download" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><!--Javascript--><script type="text/javascript" src="./NIS Members Portal_files/jquery-1.5.1.min.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/jquery.ui.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/utils.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/hoverIntent.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/superfish.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/supersubs.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/jquery.cycle.all.min.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/jquery.easing.1.3.js.download"></script><!-- ============================================================== --><!-- All Jquery --><!-- ============================================================== --><script src="./NIS Members Portal_files/jquery.min.js.download"></script><!-- Bootstrap tether Core JavaScript --><!-- apps --><script src="./NIS Members Portal_files/app.min.js.download"></script><!-- Theme settings --><script src="./NIS Members Portal_files/app.init.boxed.js.download"></script><script src="./NIS Members Portal_files/app-style-switcher.js.download"></script><!-- slimscrollbar scrollbar JavaScript --><script src="./NIS Members Portal_files/perfect-scrollbar.jquery.min.js.download"></script><script src="./NIS Members Portal_files/sparkline.js.download"></script><!--Wave Effects --><script src="./NIS Members Portal_files/waves.js.download"></script><!--Menu sidebar --><script src="./NIS Members Portal_files/sidebarmenu.js.download"></script><!--Custom JavaScript --><script src="./NIS Members Portal_files/custom.min.js.download"></script><!--This page JavaScript --><!--c3 JavaScript --><script src="./NIS Members Portal_files/d3.min.js.download"></script><script src="./NIS Members Portal_files/c3.min.js.download"></script><script src="./NIS Members Portal_files/dashboard3.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/jquery.cookie.js.download"></script><script type="text/javascript" src="./NIS Members Portal_files/colorpicker.js.download"></script><script src="./NIS Members Portal_files/popper.js.download"></script><script src="./NIS Members Portal_files/bootstrap.js.download"></script><script src="./NIS Members Portal_files/jquery.cookie.js(1).download"></script><script src="./NIS Members Portal_files/jquery.dataTables.js.download"></script><script src="./NIS Members Portal_files/dataTables.responsive.js.download"></script><script src="./NIS Members Portal_files/select2.min.js.download"></script><script src="./NIS Members Portal_files/parsley.js.download"></script><script src="./NIS Members Portal_files/moment.js.download"></script><script src="./NIS Members Portal_files/jquery-ui.js.download"></script><script src="./NIS Members Portal_files/slim.js.download"></script><!-- jQuery library --><!--This page JavaScript --><script type="text/javascript">var baseUrl = 'http://member.nisngr.net/';var resourcesUrl = 'http://member.nisngr.net/application/views/nisngr/static/';</script>
+                    <script type="text/javascript" charset="utf-8">
+                        $(function() {
+                            // jQuery image change on hover
+                            $("ul#socialBW li a img, div#taskListContainer ul li p a img")
+                                    .mouseover(function() {
+                                        var src = $(this).attr("src").match(/[^\.]+/) + "Over.png";
+                                        $(this).attr("src", src);
+                                    })
+                                    .mouseout(function() {
+                                        var src = $(this).attr("src").replace("Over", "");
+                                        $(this).attr("src", src);
+                                    });
+                        });
+                    </script>
+
+                <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><link id="headerSkin" rel="stylesheet" href="http://member.nisngr.net/application/new/type/1"></head><body class="dashboard-4" data-gr-c-s-loaded="true"><div class="slim-header"><div class="container"><div class="slim-header-left"><h2 class="slim-logo"><a href="http://member.nisngr.net/application/new/type/1#"><img src="./NIS Members Portal_files/logo.png" height="75"></a></h2><!--  <div class="search-box"><input type="text" class="form-control" placeholder="Search"><button class="btn btn-primary"><i class="fa fa-search"></i></button></div> --></div></div><!-- container --></div><!-- slim-header --><div class="slim-navbar"><div class="container"><ul class="nav"><li class="nav-item active"><a class="nav-link" href="http://nisngr.net/"><i class="icon ion-ios-home-outline"></i><span>Main Site</span></a></li><li class="nav-item"><a class="nav-link" href="http://member.nisngr.net/auth/login/"><i class="icon ion-unlocked"></i><span>Login</span></a></li><li class="nav-item"><a class="nav-link" href="http://member.nisngr.net/application/new/"><i class="icon ion-clipboard"></i><span>Register</span></a></li></ul></div><!-- container --></div><!-- slim-navbar -->    
+<div class="slim-mainpanel"><div class="container"><div class="slim-pageheader"><h6 class="slim-pagetitle">Hi There!  Welcome to the online community of NIS members.</h6></div><!-- slim-pageheader --><div class="container"><div id="content" class="twelve columns"><div id="maincontent" class="eight columns alpha"><div class="post"><h1>Individual Admission</h1>    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="min-height: unset;"><div class="post"><p class="log-in">Already a Member? <a href="http://member.nisngr.net/auth/login/">Please Log-in</a>.</p><div class="alert alert-info"><i class="icon-warning-sign icon-large"></i> <strong>IMPORTANT NOTICE!</strong> Thank you for your interest in applying for membership of this professional association. We do believe you have taken some time to review all <a href="http://member.nisngr.net/application/new/">instructions</a> for completing this form as well as <a href="http://member.nisngr.net/application/new/">requirements for application to individual membership categories</a>. If you have not reviewed all instructions for completing this form, <a href="http://member.nisngr.net/application/new/">please do so now</a>. Your application may be declined if you do not abide by them.<br>If you have applied for membership of the association in the past or if you have been registered and issued a membership ID number in the past (most especially as an undergraduate), please DO NOT submit a new application, we have your details and information on file. Contact the Membership Officer via (info@nisngr.net) to reactivate your membership. Thank you.</div><div class="row"><form action="http://member.nisngr.net/application/new/type/1" class="new_member_form form-horizontal m-t-20" method="post" enctype="multipart/form-data" id="newMemberForm"><div class="row"><div class="col-12"><div class="row"><!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Basic Profile</h3><p class="note">Fields marked with an asterisk (<abbr title="Required field">*</abbr>) are required.</p><div id="field-title"><label class="heading">Title<abbr title="Required field">*</abbr></label><select class="form-control" name="title_id" style="width: auto;"><option value=""></option><option value="55">Barr</option>
+<option value="53">Chief</option>
+<option value="52">Dr.</option>
+<option value="56">Engr.</option>
+<option value="54">Hon.</option>
+<option value="48">Miss</option>
+<option value="46">Mr.</option>
+<option value="47">Mrs.</option>
+<option value="49">Ms</option>
+<option value="50">Prof</option>
+<option value="51">Prof.(Mrs.)</option>
+</select><div></div></div><div><label for="surname">Surname <abbr title="Required field">*</abbr></label><input type="text" name="surname" id="surname" class="form-control" value=""></div><div><label for="other_names">Other Names <abbr title="Required field">*</abbr></label><input type="text" name="other_names" id="othernames" class="form-control" value=""></div><div><label for="dateofbirth">Date of Birth <abbr title="Required field">*</abbr></label><input type="text" name="date_of_birth" id="date_of_birth" class="form-control hasDatepicker" placeholder="Select date" value=""></div><!-- Gender --><div id="field-gender"><label class="heading">Gender</label><select class="form-control" name="sex" style="width: auto;"><option value=""></option><option value="F">Female</option>
+<option value="M">Male	</option>
+</select><div></div></div><!-- Employer --><div id="field-activity"><label class="heading">Business Activity</label><select class="form-control" name="business_activity_id" id="business_activity_id"><option value=""></option><option value="75">Services</option>
+<option value="77">Student</option>
+<option value="74">Surveyor</option>
+<option value="76">Others</option>
+</select><div></div></div><div style="display: none;" id="business-others-div"><label for="if-biz-others">If Others, pls specify</label><input type="text" name="business_activity_others" id="business_activity_others" class="form-control" value=""></div><div id="field-status"><label class="heading">Status being applied for</label><select class="form-control" name="status_id"><option value=""></option><option value="4">Associate Membership</option>
+<option value="3">Full Membership</option>
+<option value="2">Probationer Membership</option>
+<option value="1">Student Membership</option>
+</select><div></div></div><div><label for="if-student">Expected Date of Degree <small>(Students only)</small> </label><input type="text" name="expected_degree_date" id="expected_degree_date" class="form-control hasDatepicker" placeholder="Select date" value=""></div><!-- Facebook --><!-- Profile Link --></div></div></div></div></div></div></div><!-- Column -->    
+<script>
+            
+        $(function() {
+        $('#business_activity_id').change(function(){
+            if(this.selectedIndex == this.options.length-1){
+                $('#business-others-div').fadeIn();
+            }else{
+                $('#business-others-div').fadeOut();
+                $('#business_activity_others').val('');    
+            }
+        });    
+        $( "#date_of_birth" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            numberOfMonths: 3,
+            dateFormat: "MM d, yy",
+            defaultDate: "-20y"
+        });
+        
+        $( "#expected_degree_date" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            numberOfMonths: 3,
+            dateFormat: "MM, yy",
+            minDate: 0
+        });
+        
+    });
+    
+</script><!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Contact Information</h3></div><div class="form-group"><label for="home_add_1">Home Address Line 1</label><input type="text" name="home_address_line1" id="home_add_1" class="form-control" value=""></div><div class="form-group"><label for="home_add_2">Home Address Line 2</label><input type="text" name="home_address_line2" id="home_add_2" class="form-control" value=""></div><div class="form-group"><label for="home_add_3">Home Address Line 3</label><input type="text" name="home_address_line3" id="home_address" class="form-control" value=""></div><!-- Phone --><div class="form-group"><label for="phone_office">Phone (Office)</label><input type="text" name="phone_office" id="phone_office" class="form-control" value=""></div><!-- Mobile --><div class="form-group"><label for="mobile">Mobile</label><input type="text" name="phone_mobile" id="mobile" class="form-control" value=""></div><div class="form-group"><label for="phone_home">Phone (Home)</label><input type="text" name="phone_home" id="phone_home" class="form-control" value=""></div><!-- Email --><div class="form-group"><label for="email">Email address <abbr title="Required field">*</abbr></label><input type="text" name="email_address" id="email" class="form-control" value=""></div></div></div></div></div></div></div><!-- Column -->    <!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Employer Information</h3><div class="form-group"><label for="employer">Current Employer/Institution</label><input type="text" name="ce_employer" id="employer" class="form-control" value=""></div><div class="form-group"><label for="position">Position or Title/Level</label><input type="text" name="ce_position" id="position" class="form-control" value=""></div><div class="form-group"><label for="mailing_add_1">Employer's Address <small>(Not a P.0. Box)</small></label><input type="text" name="ce_address_line1" id="mailing_add_1" class="form-control" value=""><input type="text" name="ce_address_line2" id="mailing_add_1" class="form-control" value=""><input type="text" name="ce_address_line3" id="mailing_add_3" class="form-control" value=""></div><div class="form-group"><label for="mailing_add_3">Employer's Mailing Address</label><input type="text" name="ce_mailing_address" id="mailing_add_3" class="form-control" value=""></div></div></div></div></div></div></div></div><!-- Column -->    <!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Education</h3><div id="education-set"><div class="eduction-history" id="education-def5c3889e8900ba"><div><label for="inst_1_name">Institution Attended<abbr title="Required field">*</abbr></label><input type="text" name="education[def5c3889e8900ba][institution]" id="edInst-def5c3889e8900ba" class="form-control" value=""></div><div><label for="inst_1_dates">Dates Attended <abbr title="Required field">*</abbr></label><select class="form-control" name="education[def5c3889e8900ba][date_from]" id="edFrom-def5c3889e8900ba" style="width: 80px;"><option value="">From</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select> -&nbsp;<select class="form-control" name="education[def5c3889e8900ba][date_to]" id="edTo-def5c3889e8900ba" style="width: 80px;"><option value="">To</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select>&nbsp; <span class="inline" style="vertical-align: middle;"><input class="edPresent" type="checkbox" value="-1" id="edToPresent-def5c3889e8900ba" name="education[def5c3889e8900ba][date_to]"> Till Present</span></div><div><label for="inst_1_qual">Qualification <abbr title="Required field">*</abbr></label><select class="form-control" name="education[def5c3889e8900ba][qualifications]" id="edQual-def5c3889e8900ba" style="width: 90px;"><option></option><option value="B.A">B.A</option>
+<option value="B.ENG">B.ENG</option>
+<option value="B.Sc(Hons)">B.Sc(Hons)</option>
+<option value="B.TECH">B.TECH</option>
+<option value="FSLC">FSLC</option>
+<option value="H.N.D">H.N.D</option>
+<option value="M. Phil">M. Phil</option>
+<option value="M.Sc">M.Sc</option>
+<option value="MBA">MBA</option>
+<option value="NCE">NCE</option>
+<option value="O.N.D">O.N.D</option>
+<option value="P.G.D">P.G.D</option>
+<option value="Phd">Phd</option>
+<option value="WASC/SSCE/GCE">WASC/SSCE/GCE</option>
+</select></div><div><label for="inst_1_major">Major</label><input type="text" name="education[def5c3889e8900ba][subject_major]" id="inst_1_major" class="form-control" value=""></div><div class="record-del-wrapper"><a href="http://member.nisngr.net/application/new/type/1#" class="education-record-del" id="ed-def5c3889e8900ba"><span class="ui-icon ui-icon-trash inline"></span> delete record</a></div></div><div class="eduction-history" id="education-edID2464" style=""><div><label for="inst_1_name">Institution Attended<abbr title="Required field">*</abbr></label><input type="text" name="education[edID2464][institution]" id="edInst-edID2464" class="form-control" value=""></div><div><label for="inst_1_dates">Dates Attended <abbr title="Required field">*</abbr></label><select class="form-control" name="education[edID2464][date_from]" id="edFrom-edID2464" style="width: 80px;"><option value="">From</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select> -&nbsp;<select class="form-control" name="education[edID2464][date_to]" id="edTo-edID2464" style="width: 80px;"><option value="">To</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select>&nbsp; <span class="inline" style="vertical-align: middle;"><input class="edPresent" type="checkbox" value="-1" id="edToPresent-edID2464" name="education[edID2464][date_to]"> Till Present</span></div><div><label for="inst_1_qual">Qualification <abbr title="Required field">*</abbr></label><select class="form-control" name="education[edID2464][qualifications]" id="edQual-edID2464" style="width: 90px;"><option></option><option value="B.A">B.A</option>
+<option value="B.ENG">B.ENG</option>
+<option value="B.Sc(Hons)">B.Sc(Hons)</option>
+<option value="B.TECH">B.TECH</option>
+<option value="FSLC">FSLC</option>
+<option value="H.N.D">H.N.D</option>
+<option value="M. Phil">M. Phil</option>
+<option value="M.Sc">M.Sc</option>
+<option value="MBA">MBA</option>
+<option value="NCE">NCE</option>
+<option value="O.N.D">O.N.D</option>
+<option value="P.G.D">P.G.D</option>
+<option value="Phd">Phd</option>
+<option value="WASC/SSCE/GCE">WASC/SSCE/GCE</option>
+</select></div><div><label for="inst_1_major">Major</label><input type="text" name="education[edID2464][subject_major]" id="inst_1_major" class="form-control" value=""></div><div class="record-del-wrapper"><a href="http://member.nisngr.net/application/new/type/1#" class="education-record-del" id="ed-edID2464"><span class="ui-icon ui-icon-trash inline"></span> delete record</a></div></div></div><div class="add-div" style="text-align: center;"><button type="button" style="width: 150px; float: none;" id="add-education-btn"><span class="ui-icon ui-icon-circle-plus inline"></span><span class="inline">&nbsp;&nbsp; Add Record</span></button></div></div></div></div></div></div></div></div><!-- Column -->    
+
+    <script type="text/javascript">
+        $(function(){
+        bindEdButtonEvents(); 
+        $('#add-education-btn').click(
+            function(){
+                var rand_id = 'edID'+Math.round(Math.random() * 10000);
+                $('#education-set').append($('#ed-template').html().replace(/_ed_template_/ig, rand_id) );
+                $('#education-'+rand_id).fadeIn();
+                bindEdButtonEvents();    
+            }
+            );
+    });
+    function bindEdButtonEvents(){
+        $('.education-record-del').click(function(e){
+            e.preventDefault();
+            if($('.eduction-history').length <= 2){
+                showErrorDialog("At least one record must be filled", "Delete Error");
+                return false;
+            }
+            var elID =this.id.split('-').pop();
+            var thisLink = this.href;    
+            doConfirmDialogBox('Are you sure you want to delete this record?', "Delete Confirmation", 
+                function(){
+                    var edSetID = '#education-'+elID;
+                    if(isNaN(parseInt(elID))){
+                        $(edSetID).fadeOut('fast', function(){
+                            $(this).remove();
+                        });
+                    }else{
+			displayMessageBox("Deleting record... please wait");
+                        $.get(thisLink, 
+				function(response){
+                       hideMessageBox();
+					   if(response.status != '0'){
+							$(edSetID).fadeOut('fast', function(){
+								$(this).remove();
+							});
+					   }else{
+							showErrorDialog("Delete failed, please try again later", "Delete Error");
+					   }
+                 }
+			);
+                    }
+                });
+        });
+            
+        $( ".edPresent" ).click(function(){
+            var groupID = this.id.split('-').pop();
+            var target = $('#edTo-'+groupID);    
+            if(this.checked){
+                target.attr('disabled', 'disabled');
+            }else{
+                target.removeAttr('disabled');
+            }   
+        });
+    }
+    </script>
+<!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Record of Experience</h3><div id="work-set"><div class="work-history" id="work-wh5c3889e892a10"><div><label for="exp_1_org">Organisation <abbr title="Required field">*</abbr></label><input type="text" name="work_history[wh5c3889e892a10][employer]" id="workEmployer-wh5c3889e892a10" class="form-control" value=""></div><div><label for="exp_1_from">Period <abbr title="Required field">*</abbr></label><select class="form-control" name="work_history[wh5c3889e892a10][date_from]" id="workDateFrom-wh5c3889e892a10" style="width: 80px;"><option value="">From</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select> -&nbsp;<select class="form-control" name="work_history[wh5c3889e892a10][date_to]" id="workDateTo-wh5c3889e892a10" style="width: 80px;"><option value="">To</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select></div><div><label for="exp_1_pos">Position <abbr title="Required field">*</abbr></label><input type="text" name="work_history[wh5c3889e892a10][position]" id="workPosition-wh5c3889e892a10" class="form-control" value=""></div><div><label for="exp_1_duties">Responsibilities <abbr title="Required field">*</abbr></label><textarea name="work_history[wh5c3889e892a10][nature_of_responsibilities]" id="workResp-wh5c3889e892a10" class="form-control"></textarea></div><div class="record-del-wrapper"><a href="http://member.nisngr.net/application/new/type/1#" class="work-record-del" id="work-wh5c3889e892a10"><span class="ui-icon ui-icon-trash inline"></span> delete record</a></div></div> 
+</div><div class="add-div" style="text-align: center;"><button type="button" style="width: 150px; float: none;" id="add-work-btn"><span class="ui-icon ui-icon-circle-plus inline"></span><span class="inline">&nbsp;&nbsp; Add Record</span></button></div></div></div></div></div></div></div></div><!-- Column -->    
+<script type="text/javascript">
+$(function(){
+    bindWorkButtonEvents();
+    $('#add-work-btn').click(
+        function(){
+            var rand_id = 'workID'+Math.round(Math.random() * 10000);
+            $('#work-set').append($('#work-template').html().replace(/_work_template_/ig, rand_id) );
+            $('#work-'+rand_id).fadeIn();
+            bindWorkButtonEvents();     
+        }
+    );
+});
+
+    function bindWorkButtonEvents(){
+        $('.work-record-del').click(function(e){
+            e.preventDefault();
+            if($('.work-history').length <= 2){
+                showErrorDialog("At least one record must be filled", "Delete Error");
+                return false;
+            }
+            var workID =this.id.split('-').pop();    
+            doConfirmDialogBox('Are you sure you want to delete this record?', "Delete Confirmation", 
+            function(){
+                var workSetID = '#work-'+workID;
+                if(isNaN(parseInt(workID))){
+                    $(workSetID).fadeOut('fast', function(){
+                        $(this).remove();
+                    });
+                }
+            });
+        });   
+        
+    }
+</script><!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Endorsement</h3><div class="endorsement-set"><div><label for="endorse_1_name">Endorser's Name <abbr title="Required field">*</abbr></label><input type="text" name="endorsement[1][name]" id="endorse_1_name" class="form-control" value=""></div><div><label for="endorse_1_id">Endorser's Member ID <abbr title="Required field">*</abbr></label><input type="text" name="endorsement[1][member_id]" id="endorse_1_id" class="form-control" value=""></div></div>    <div class="record-del-wrapper"></div><div class="endorsement-set"><div><label for="endorse_1_name">Endorser's Name <abbr title="Required field">*</abbr></label><input type="text" name="endorsement[2][name]" id="endorse_1_name" class="form-control" value=""></div><div><label for="endorse_1_id">Endorser's Member ID <abbr title="Required field">*</abbr></label><input type="text" name="endorsement[2][member_id]" id="endorse_1_id" class="form-control" value=""></div></div>    </div></div></div></div></div></div></div><!-- Column -->    <!-- Column --><div class="col-sm-12 col-md-12"><div class="card"><div class="card-body"><div class="d-flex flex-row"><div class="container"><div id="content" class="twelve columns"><div class="four columns alpha"><h3>Uploads/Credentials</h3> <span>(Each file must not be greater than 2MB)</span><div class="uploads"><label for="photo">Upload Passport Photo</label><input type="file" name="photo" id="photo" class="file"></div><h6 class="section-divider">Uploads Required for Active, Junior and Associate Members</h6><div class="uploads"><label for="cv">Upload CV</label><input type="file" name="cv" id="cv" class="file"><!--<input type="submit" name="upload" id="upload" value="Upload photo" />--><span class="description"></span></div><div class="uploads"><label for="cert">Upload Certificate</label><input type="file" name="degree-cert" id="cert" class="file"><!--<input type="submit" name="upload" id="upload" value="Upload photo" />--></div><div class="uploads"><label for="nysc">Upload NYSC Cert.</label><input type="file" name="nysc-cert" id="nysc" class="file"><!--<input type="submit" name="upload" id="upload" value="Upload photo" />--></div><h6 class="section-divider">Uploads Required for Student Members</h6><div class="uploads"><label for="student-id">Upload Student ID</label><input type="file" name="id-card" id="student-id" class="file"><!--<input type="submit" name="upload" id="upload" value="Upload photo" />--></div><h6 class="section-divider">Other Necessary Credentials (e.g. Degree certificates, training certificates, etc.) that May be needed</h6><div class="uploads"><label for="student-id">Other Credentials 1</label><input type="file" name="other-certs_1" id="other-certs-1" class="file"></div><div class="uploads"><label for="student-id">Other Credentials 2</label><input type="file" name="other-certs_2" id="other-certs-2" class="file"></div><div class="uploads"><label for="student-id">Other Credentials 3</label><input type="file" name="other-certs_3" id="other-certs-3" class="file"></div><div class="uploads"><label for="student-id">Other Credentials 4</label><input type="file" name="other-certs_4" id="other-certs-4" class="file"></div></div></div></div></div></div></div></div><!-- Column -->    </div></div></div><fieldset><div><p>Application not accompanied with CV, credentials/copy of ID card, endorsement by qualified members only and full payment would not be processed. Thank you</p></div><!-- Terms of Service --><div id="field-agree-tos"><ul><li><label><input type="checkbox" id="agree_tos" name="agree_tos" value="yes"> I have read and agree to the <a href="http://member.nisngr.net/application/new/type/1#">Terms of Service</a>.</label></li></ul></div><!-- Controls --><div class="controls"><input id="f-submit" class="btn btn-block btn-lg btn-info" name="update" type="submit" value="register"></div></fieldset></form></div><div style="display: none;" id="ed-template"><div class="eduction-history" id="education-_ed_template_" style="display: none;"><div><label for="inst_1_name">Institution Attended<abbr title="Required field">*</abbr></label><input type="text" name="education[_ed_template_][institution]" id="edInst-_ed_template_" class="form-control" value=""></div><div><label for="inst_1_dates">Dates Attended <abbr title="Required field">*</abbr></label><select class="form-control" name="education[_ed_template_][date_from]" id="edFrom-_ed_template_" style="width: 80px;"><option value="">From</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select> -&nbsp;<select class="form-control" name="education[_ed_template_][date_to]" id="edTo-_ed_template_" style="width: 80px;"><option value="">To</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select>&nbsp; <span class="inline" style="vertical-align: middle;"><input class="edPresent" type="checkbox" value="-1" id="edToPresent-_ed_template_" name="education[_ed_template_][date_to]"> Till Present</span></div><div><label for="inst_1_qual">Qualification <abbr title="Required field">*</abbr></label><select class="form-control" name="education[_ed_template_][qualifications]" id="edQual-_ed_template_" style="width: 90px;"><option></option><option value="B.A">B.A</option>
+<option value="B.ENG">B.ENG</option>
+<option value="B.Sc(Hons)">B.Sc(Hons)</option>
+<option value="B.TECH">B.TECH</option>
+<option value="FSLC">FSLC</option>
+<option value="H.N.D">H.N.D</option>
+<option value="M. Phil">M. Phil</option>
+<option value="M.Sc">M.Sc</option>
+<option value="MBA">MBA</option>
+<option value="NCE">NCE</option>
+<option value="O.N.D">O.N.D</option>
+<option value="P.G.D">P.G.D</option>
+<option value="Phd">Phd</option>
+<option value="WASC/SSCE/GCE">WASC/SSCE/GCE</option>
+</select></div><div><label for="inst_1_major">Major</label><input type="text" name="education[_ed_template_][subject_major]" id="inst_1_major" class="form-control" value=""></div><div class="record-del-wrapper"><a href="http://member.nisngr.net/application/new/type/1#" class="education-record-del" id="ed-_ed_template_"><span class="ui-icon ui-icon-trash inline"></span> delete record</a></div></div></div><div style="display: none;" id="work-template"><div class="work-history" id="work-_work_template_" style="display: none;"><div><label for="exp_1_org">Organisation <abbr title="Required field">*</abbr></label><input type="text" name="work_history[_work_template_][employer]" id="workEmployer-_work_template_" class="form-control" value=""></div><div><label for="exp_1_from">Period <abbr title="Required field">*</abbr></label><select class="form-control" name="work_history[_work_template_][date_from]" id="workDateFrom-_work_template_" style="width: 80px;"><option value="">From</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select> -&nbsp;<select class="form-control" name="work_history[_work_template_][date_to]" id="workDateTo-_work_template_" style="width: 80px;"><option value="">To</option><option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+</select></div><div><label for="exp_1_pos">Position <abbr title="Required field">*</abbr></label><input type="text" name="work_history[_work_template_][position]" id="workPosition-_work_template_" class="form-control" value=""></div><div><label for="exp_1_duties">Responsibilities <abbr title="Required field">*</abbr></label><textarea name="work_history[_work_template_][nature_of_responsibilities]" id="workResp-_work_template_" class="form-control"></textarea></div><div class="record-del-wrapper"><a href="http://member.nisngr.net/application/new/type/1#" class="work-record-del" id="work-_work_template_"><span class="ui-icon ui-icon-trash inline"></span> delete record</a></div></div> 
+</div></div></div>    </div></div></div></div>    <!-- <div class="section-wrapper" style="border: unset; background-color: unset;"></div> --></div><!-- container --></div><!-- slim-mainpanel --><div class="slim-footer"><div class="container"><p>Copyright 2018 © All Rights Reserved. NIS Membership Portal</p><p>Designed by: <a href="http://lumiere-ng.com/">Lumiere</a></p></div><!-- container --></div><!-- slim-footer -->    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

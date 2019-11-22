@@ -1,0 +1,72 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+function displayMessageBox(msg){  
+    $('#status-text').html(msg);
+    //overlays
+    var overlayHeight = $(document).height();  
+    var overlayWidth = $(window).width();
+    // get the screen height and width
+    var maskHeight = $(window).scrollTop() + $(window).height()/2;  
+    var maskWidth = $(window).width();
+    // calculate the values for center alignment
+    var dialogTop =  maskHeight - ($('#response').height()/2);
+    //mouseY - ($('#response').height());//  
+    var dialogLeft = (maskWidth/2) - ($('#response').width()/2);
+    $(document).scrollTop(maskHeight - $(window).height()/2);
+    $('#dialog-overlay').css({
+        height:overlayHeight, 
+        width:overlayWidth
+    }).show(); 
+    // assign values to the overlay and dialog box
+    $('#response').css({
+        top:dialogTop, 
+        left:dialogLeft
+    }).show();
+    $('#response').fadeIn(200);
+            
+}
+
+function hideMessageBox(){
+    $("#response, #dialog-overlay").fadeOut(200);   
+}
+
+function showErrorDialog(msg, titleDialog){
+
+    $('#dialogBox').html(msg).dialog({
+        bgiframe: true, 
+        width: 400, 
+        modal: true, 
+        buttons: {
+            Close: function() {
+                $(this).dialog('close');
+            }
+        }
+    });
+    if(titleDialog){
+        $( "#dialogBox" ).dialog('option', 'title', titleDialog);
+    }
+}
+
+function doConfirmDialogBox(msg, msgTitle, callback){
+    
+    $('#confirmBox').html(msg).dialog({
+        bgiframe: true, 
+        width: 400, 
+        modal: true, 
+        buttons: {
+            Yes: function(){
+                $(this).dialog('close');
+                callback();
+            },    
+            Cancel: function() {
+                $(this).dialog('close'); 
+            }
+        }
+    });
+    
+    if(msgTitle){
+        $( "#confirmBox" ).dialog('option', 'title', msgTitle);
+    }
+}

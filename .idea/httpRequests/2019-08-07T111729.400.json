@@ -1,0 +1,5 @@
+{
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "Required String parameter 'dateVisit' is not present"
+}

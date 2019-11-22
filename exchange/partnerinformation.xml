@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<partnerinformations>
+  <partnerinformation>
+    <partnerinformation_id>3664</partnerinformation_id>
+    <patient_id>316822</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>a876b031-ae4e-4f96-9730-cbba852572d2</id_uuid>
+    <hospital_num>0000543</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3665</partnerinformation_id>
+    <patient_id>316824</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>55764b7e-f631-4bef-b073-cec7467db3ab</id_uuid>
+    <hospital_num>0000616</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3666</partnerinformation_id>
+    <patient_id>316851</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>daaee46a-0969-460a-819a-f79b7e302982</id_uuid>
+    <hospital_num>0000664</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3667</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>f53e0601-91e0-4053-8848-1fdb67aa842c</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3668</partnerinformation_id>
+    <patient_id>316856</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>97718623-5359-4273-bd46-fdabf9956100</id_uuid>
+    <hospital_num>0000506</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3669</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>7cea383c-9a6a-4c71-aa8a-c5ec6e47b4c6</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3670</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>3e1186ed-ef94-4f8c-812b-11eb00068a61</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3671</partnerinformation_id>
+    <patient_id>316873</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>5120d625-7459-41c7-96e0-9c3936be8842</id_uuid>
+    <hospital_num>0000665</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3672</partnerinformation_id>
+    <patient_id>317148</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>2e6fd08b-8ab7-4b2a-af79-bbf76158cd27</id_uuid>
+    <hospital_num>0000559</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3673</partnerinformation_id>
+    <patient_id>317440</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>84754f50-f707-4875-be9d-2fc634799b17</id_uuid>
+    <hospital_num>0000553</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3674</partnerinformation_id>
+    <patient_id>316863</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>d0bdc63d-31b6-44ba-9e6b-aac083db1a93</id_uuid>
+    <hospital_num>0000525</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3675</partnerinformation_id>
+    <patient_id>316866</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:50.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>2b6922c0-a2c3-4311-9b16-1d5debf6f5e5</id_uuid>
+    <hospital_num>0000509</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3676</partnerinformation_id>
+    <patient_id>316868</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:50.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>595795ec-c96c-4456-a5f1-ddb2e9c15378</id_uuid>
+    <hospital_num>0000563</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3677</partnerinformation_id>
+    <patient_id>316872</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>e2502bf4-8a88-4617-907a-2cf55e5f58e6</id_uuid>
+    <hospital_num>0000501</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3678</partnerinformation_id>
+    <patient_id>317097</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>c9575443-8dbd-440b-867e-12fdb6c4d313</id_uuid>
+    <hospital_num>0000640</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3679</partnerinformation_id>
+    <patient_id>316877</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>e30e1404-848b-4983-b97b-eb7bed418fa9</id_uuid>
+    <hospital_num>0000586</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3680</partnerinformation_id>
+    <patient_id>316959</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>a9dbee53-a301-4969-a034-efb96f59acf2</id_uuid>
+    <hospital_num>0000510</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3681</partnerinformation_id>
+    <patient_id>316880</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>45dc29e3-d9c7-4418-a88c-bd01c5b98f1a</id_uuid>
+    <hospital_num>0000524</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3682</partnerinformation_id>
+    <patient_id>316882</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>30e00ac8-29a7-42e6-874f-f5e64cceace3</id_uuid>
+    <hospital_num>0000544</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>3683</partnerinformation_id>
+    <patient_id>316887</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-05-17 15:18:51.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-05-17 15:18:51.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>640b1780-e75f-483a-9d3d-99a978bba744</id_uuid>
+    <hospital_num>0000552</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7077</partnerinformation_id>
+    <patient_id>316822</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>a876b031-ae4e-4f96-9730-cbba852572d2</id_uuid>
+    <hospital_num>0000543</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7078</partnerinformation_id>
+    <patient_id>316824</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>55764b7e-f631-4bef-b073-cec7467db3ab</id_uuid>
+    <hospital_num>0000616</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7079</partnerinformation_id>
+    <patient_id>316851</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>daaee46a-0969-460a-819a-f79b7e302982</id_uuid>
+    <hospital_num>0000664</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7080</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>f53e0601-91e0-4053-8848-1fdb67aa842c</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7081</partnerinformation_id>
+    <patient_id>316856</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>97718623-5359-4273-bd46-fdabf9956100</id_uuid>
+    <hospital_num>0000506</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7082</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:08.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>7cea383c-9a6a-4c71-aa8a-c5ec6e47b4c6</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7083</partnerinformation_id>
+    <patient_id>316860</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>3e1186ed-ef94-4f8c-812b-11eb00068a61</id_uuid>
+    <hospital_num>0000648</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7084</partnerinformation_id>
+    <patient_id>316873</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:08.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>5120d625-7459-41c7-96e0-9c3936be8842</id_uuid>
+    <hospital_num>0000665</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7085</partnerinformation_id>
+    <patient_id>317148</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>2e6fd08b-8ab7-4b2a-af79-bbf76158cd27</id_uuid>
+    <hospital_num>0000559</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7086</partnerinformation_id>
+    <patient_id>317440</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>84754f50-f707-4875-be9d-2fc634799b17</id_uuid>
+    <hospital_num>0000553</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7087</partnerinformation_id>
+    <patient_id>316863</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>d0bdc63d-31b6-44ba-9e6b-aac083db1a93</id_uuid>
+    <hospital_num>0000525</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7088</partnerinformation_id>
+    <patient_id>316866</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>2b6922c0-a2c3-4311-9b16-1d5debf6f5e5</id_uuid>
+    <hospital_num>0000509</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7089</partnerinformation_id>
+    <patient_id>316868</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>595795ec-c96c-4456-a5f1-ddb2e9c15378</id_uuid>
+    <hospital_num>0000563</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7090</partnerinformation_id>
+    <patient_id>316872</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>e2502bf4-8a88-4617-907a-2cf55e5f58e6</id_uuid>
+    <hospital_num>0000501</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7091</partnerinformation_id>
+    <patient_id>317097</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>c9575443-8dbd-440b-867e-12fdb6c4d313</id_uuid>
+    <hospital_num>0000640</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7092</partnerinformation_id>
+    <patient_id>316877</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>e30e1404-848b-4983-b97b-eb7bed418fa9</id_uuid>
+    <hospital_num>0000586</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7093</partnerinformation_id>
+    <patient_id>316959</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>a9dbee53-a301-4969-a034-efb96f59acf2</id_uuid>
+    <hospital_num>0000510</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7094</partnerinformation_id>
+    <patient_id>316880</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>45dc29e3-d9c7-4418-a88c-bd01c5b98f1a</id_uuid>
+    <hospital_num>0000524</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7095</partnerinformation_id>
+    <patient_id>316882</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>30e00ac8-29a7-42e6-874f-f5e64cceace3</id_uuid>
+    <hospital_num>0000544</hospital_num>
+  </partnerinformation>
+  <partnerinformation>
+    <partnerinformation_id>7096</partnerinformation_id>
+    <patient_id>316887</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit></date_visit>
+    <partner_notification></partner_notification>
+    <partner_hiv_status>Unknown</partner_hiv_status>
+    <partner_referred></partner_referred>
+    <time_stamp>2019-06-03 10:12:09.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:12:09.0</time_uploaded>
+    <user_id>1</user_id>
+    <id_uuid>640b1780-e75f-483a-9d3d-99a978bba744</id_uuid>
+    <hospital_num>0000552</hospital_num>
+  </partnerinformation>
+</partnerinformations>

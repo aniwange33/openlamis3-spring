@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adrhistories>
+  <adrhistory>
+    <history_id>17</history_id>
+    <patient_id>317296</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit>2016-12-20</date_visit>
+    <adr>8. Anemia</adr>
+    <severity>1</severity>
+    <screener>1</screener>
+    <time_stamp>2019-06-03 10:11:41.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:11:41.0</time_uploaded>
+    <id_uuid>863582c0-a731-416a-adf9-41c42bcd6101</id_uuid>
+    <hospital_num>000065</hospital_num>
+  </adrhistory>
+  <adrhistory>
+    <history_id>18</history_id>
+    <patient_id>316343</patient_id>
+    <facility_id>1190</facility_id>
+    <date_visit>2015-05-26</date_visit>
+    <adr>6. Rash</adr>
+    <severity>1</severity>
+    <screener>1</screener>
+    <time_stamp>2019-06-03 10:11:41.0</time_stamp>
+    <uploaded></uploaded>
+    <time_uploaded>2019-06-03 10:11:41.0</time_uploaded>
+    <id_uuid>c3bbb77f-7d60-44e6-bc00-64d0ec6e04f6</id_uuid>
+    <hospital_num>0000269</hospital_num>
+  </adrhistory>
+</adrhistories>

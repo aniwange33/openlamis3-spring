@@ -1,0 +1,3 @@
+org\fhi360\lamis\controller\mapstruct\MaternalFollowupMapperImpl.class
+org\fhi360\lamis\model\dto\MaternalFollowupDTO.class
+org\fhi360\lamis\controller\mapstruct\MaternalFollowupMapper.class

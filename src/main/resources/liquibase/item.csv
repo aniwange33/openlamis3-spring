@@ -1,0 +1,100 @@
+item_id;description;unit_measure;max_level;min_level;balance_type;unit_cost;balance
+1;Efavirenz 600mg;;0;0;;0;0
+2;Efavirenz 200mg;;0;0;;0;0
+3;Lamivudine 150mg;;0;0;;0;0
+4;Lamivudine 10mg/ml;;0;0;;0;0
+5;Lamivudine 300mg;;0;0;;0;0
+6;Lamivudine/Zidovudine 150/300mg;;0;0;;0;0
+7;Stavudine/Lamivudine/Efavirenz 6/30/200mg;;0;0;;0;0
+8;Stavudine/Lamivudine/Efavirenz 12/60/200mg;;0;0;;0;0
+9;Stavudine/Lamivudine/Nevirapine 6/30/50mg;;0;0;;0;0
+10;Stavudine/Lamivudine/Nevirapine 12/60/100mg;;0;0;;0;0
+11;Zidovudine/Lamivudine/Nevirapine 60/30/50mg;;0;0;;0;0
+12;Zidovudine/Lamivudine/Efavirenz 60/30/200mg;;0;0;;0;0
+13;Nevirapine 10mg/ml;;0;0;;0;0
+14;Nevirapine 200mg;;0;0;;0;0
+15;Stavudine 30mg;;0;0;;0;0
+16;Stavudine 1mg/ml;;0;0;;0;0
+17;Zidovudine 100mg;;0;0;;0;0
+18;Zidovudine 10mg/ml;;0;0;;0;0
+19;Zidovudine 300mg;;0;0;;0;0
+20;Zidovudine 60mg;;0;0;;0;0
+21;Didanosine 10mg/ml;;0;0;;0;0
+22;Didanosine 400mg;;0;0;;0;0
+23;Abacavir 300mg;;0;0;;0;0
+24;Abacavir 20mg/ml;;0;0;;0;0
+25;Abacavir 60mg;;0;0;;0;0
+26;Lopinavir/Ritonavir 80/20mg/ml;;0;0;;0;0
+27;Lopinavir/Ritonavir 200/50mg;;0;0;;0;0
+28;Indinavir/Ritonavir 400/50mg;;0;0;;0;0
+29;Atazanavir/Ritonavir 300/100mg;;0;0;;0;0
+30;Emtricitabine 200mg;;0;0;;0;0
+31;Tenofovir 300mg;;0;0;;0;0
+32;Tenofovir/Emtricitabine 300/200mg;;0;0;;0;0
+33;Stavudine 20mg;;0;0;;0;0
+34;Stavudine 6mg;;0;0;;0;0
+35;Stavudine 12mg;;0;0;;0;0
+36;Lamivudine 30mg;;0;0;;0;0
+37;Lamivudine 60mg;;0;0;;0;0
+38;Nevirapine 50mg;;0;0;;0;0
+39;Zidovudine 60mg;;0;0;;0;0
+41;Cotrimoxazole 960mg;;0;0;;0;0
+42;Cotrimoxazole 480mg;;0;0;;0;0
+43;Cotrimoxazole 240mg/5ml;;0;0;;0;0
+44;Acyclovir 200mg;;0;0;;0;0
+45;Amoxycillin/Clavulanate 625mg;;0;0;;0;0
+46;Amoxycillin/Clavulanate 457mg/5ml;;0;0;;0;0
+47;Fluconazole 50mg;;0;0;;0;0
+48;Fluconazole 50mg/5ml;;0;0;;0;0
+49;Fluconazole 200mg;;0;0;;0;0
+50;Nystatin 100000iu/ml;;0;0;;0;0
+51;Tinidazole 500mg;;0;0;;0;0
+52;Azithromycin 250mg;;0;0;;0;0
+53;Benzathine Penicillin;;0;0;;0;0
+54;Ceftriaxone 1g;;0;0;;0;0
+55;Ciprofloxacin 500mg;;0;0;;0;0
+56;Doxycycline 100mg;;0;0;;0;0
+57;Erythromycin 500mg;;0;0;;0;0
+58;Ofloxacin 200mg;;0;0;;0;0
+59;Spectinomycine 2g;;0;0;;0;0
+60;Tetracycline 500mg;;0;0;;0;0
+61;Amitryptiline 25mg;;0;0;;0;0
+62;Arthemeter/Lumefantrine 20/120mg;;0;0;;0;0
+63;Folic Acid 5mg;;0;0;;0;0
+64;Ferrous Sulphate 300mg;;0;0;;0;0
+65;Ferrous Gluconate 300mg;;0;0;;0;0
+66;Multivitamin;;0;0;;0;0
+67;Multivitamin Syrup;;0;0;;0;0
+68;Ibuprofen 200mg;;0;0;;0;0
+69;Loperamide 2mg;;0;0;;0;0
+70;Promethezine HCL 25mg;;0;0;;0;0
+71;Tramadol HCL 50mg;;0;0;;0;0
+72;Oral Dehydration Solution;;0;0;;0;0
+73;Fluoxetine 20mg;;0;0;;0;0
+74;Loratidine 10mg;;0;0;;0;0
+75;Metoclopramide 10mg;;0;0;;0;0
+76;Benzoic Acid/Salicylic Acid Ointment 6/3%;;0;0;;0;0
+77;Hydrocortisone 1%;;0;0;;0;0
+78;Chlorpheniramine 4mg;;0;0;;0;0
+79;Sulphadoxin/Pyrimethamine 500/25mg;;0;0;;0;0
+80;Ibuprofen 400mg;;0;0;;0;0
+81;Nystatin 500000iu;;0;0;;0;0
+82;Zithromax 500mg;;0;0;;0;0
+83;Metronidazole 400mg;;0;0;;0;0
+84;Rifampicin 150mg;;0;0;;0;0
+85;Rifampicin 60mg;;0;0;;0;0
+86;Isoniazid 75mg;;0;0;;0;0
+87;Isoniazid 100mg;;0;0;;0;0
+88;Ethambuthol 275mg;;0;0;;0;0
+89;Ethambuthol 400mg;;0;0;;0;0
+90;Pyrazinamide 400mg;;0;0;;0;0
+91;Pyrazinamide 150mg;;0;0;;0;0
+92;Streptomycin 1g;;0;0;;0;0
+93;Ethambuthol/Isoniazid 400/150mg;;0;0;;0;0
+94;Rifampicin/Isoniazid 150/75mg;;0;0;;0;0
+95;Rifampicin/Isoniazid 60/30mg;;0;0;;0;0
+96;Rifampicin/Isoniazid/Pyrazinamide 60/30/150mg;;0;0;;0;0
+97;Rifampicin/Isoniazid/Pyrazinamide/Ethambuthol 150/75/400/275mg;;0;0;;0;0
+98;Zidovudine/Lamivudine/Nevirapine 300/150/200mg;;0;0;;0;0
+99;Isoniazid 300mg;;0;0;;0;0
+100;Dolutegravir 50mg;;0;0;;0;0

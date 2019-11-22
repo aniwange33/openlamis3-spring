@@ -1,0 +1,373 @@
+
+* {
+    outline:none !important;
+    -moz-outline: none !important;
+}
+/* Main */
+body {
+    overflow-x: hidden;
+    margin-top: -10px;
+}
+a, a:focus, a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Header */
+#header {
+    height: 62px;
+    position: relative;
+    width: 100%;
+    z-index: -7;
+}
+
+#header {
+    background-color: #0c2646;
+    margin-top:10px;
+}
+/*
+#header h1 {
+    background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
+    height: 31px;
+    left: 15px;
+    line-height: 600px;
+    overflow: hidden;
+    position: relative;
+    top:20px; 
+    width: 191px;
+}
+*/
+
+#header h1 a {
+    display: block;
+    color: #ffffff;
+    margin-left: 5px;
+    top: 20px;
+}
+.fl{ float:left}
+.fr{ float:right}
+
+/* Top user navsigation #49cced  #41bedd*/
+#sidebar{ width:100%; background:#49cced;  position:absolute; clear:both; top:62px;}
+#sidebar > ul{ margin:0px; padding:0px; width:100%; display:block; z-index:999;} 
+#sidebar > ul > li { list-style-type:none; float:left; display:block; margin:0px; border-right:1px solid #41bedd; position:relative; padding:10px; cursor:pointer} 
+#sidebar > ul > li a{ padding:12px 0;}
+#sidebar > ul > li:hover ul { display:block;} 
+#sidebar > ul > li:hover { background-color:#41bedd;} 
+#sidebar > ul > li:hover a{ background:none;}
+#sidebar > ul li ul { margin:0px; padding:0px; display:none; z-index:999;  position:absolute; left:0px; top:40px;  background:#41bedd; min-width:200px;} 
+#sidebar > ul li ul li { list-style-type:none; margin:0px; font-size:12px;line-height:30px;  } 
+#sidebar > ul li ul li a { display:block; padding:5px 10px; color:#fff; text-decoration:none; font-weight:bold; } 
+#sidebar > ul li ul li:hover a{ background-color:#36a8c5;} 
+#sidebar > ul li span { cursor:pointer; margin:0px 2px 0 5px; font-weight:bold; color:#fff; font-size:11px; }
+/*#sidebar > ul li a i{ background-image: url("../img/glyphicons-halflings-white.png");     margin-top:4px;    vertical-align: top;}*/
+#my_menu_input{ display:none;}
+#user-navs {
+    position: absolute;
+    right:0px;
+    top: 0px;
+    z-index:11;
+    margin: 0;
+}
+#user-navs > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#user-navs > ul > li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    padding:6px 0;
+    background:#0c2646;
+    border-left:1px solid #363e48;
+}
+#user-navs > ul > li:hover{ background:#232a32;}
+#user-navs > ul > li > a {
+    color: #fff;
+    padding: 15px 10px; 
+    display: block;
+    font-size: 12px;
+}
+
+#user-navs > ul > li > a:hover, #user-navs > ul > li.open > a {
+	color: #ffffff;
+}
+#user-navs > ul > li > a > i, #sidebar li a i {
+	vertical-align: top;
+/*	background-image: url('../img/glyphicons-halflings-white.png');*/
+	margin-top: 2px;
+}
+#user-navs > ul > li > a:hover > i, #user-navs > ul > li.open > a > i {
+	opacity: 1;
+}
+
+#user-navs > ul > li > a > .label {
+	vertical-align: middle;
+	padding: 1px 4px 1px;
+	margin: -2px 4px 0;
+	display: inline-block;
+}
+
+
+#user-navs > ul ul > li > a {
+	text-align: left;
+	text-shadow: 0 1px 0 #ffffff;
+}
+#user-navs > ul ul > li > a:hover {
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+
+
+/* Content */
+#content {
+    background:url(../images/backgrounds/bodyBg.png) repeat #fff;
+    margin-left:0px;
+    margin-right: 0;
+	margin-top:80px;
+    padding-bottom: 25px;
+    position: relative;
+    min-height: 500px;
+    width: auto;
+}
+
+#content-header {
+	position: abslute;
+    width: 100%;
+    margin-top: -38px;
+    z-index: 20;
+}
+
+#content-header h1 {
+    color: #555555;
+    font-size: 28px;
+    font-weight: normal;
+    float: none;
+    text-shadow: 0 1px 0 #ffffff;
+    margin-left: 20px;
+    position: relative;
+}
+
+#content-header .btn-group {
+	float: right;
+	right: 20px;
+	position: absolute;
+}
+
+#content-header h1, #content-header .btn-group {
+	margin-top: 20px;
+}
+#content-header .btn-group .btn {
+	padding: 11px 14px 9px;
+}
+#content-header .btn-group .btn .label {
+	position: absolute;
+	top: -7px;
+}
+
+.container-fluid .row-fluid:first-child {
+	margin-top: 20px;
+}
+/* Breadcrumb */
+#breadcrumbs {
+	background-color: #fff;
+	border-bottom: 1px solid #e3ebed;
+
+}
+#breadcrumbs a {
+	padding: 8px 20px 8px 10px;
+	display: inline-block;
+	background-image: url('../img/breadcrumbs.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	font-size: 11px;
+	color: #666666;
+}
+#breadcrumbs a:hover {
+	color: #333333;
+}
+#breadcrumbs a:last-child {
+	background-image:none;
+}
+#breadcrumbs a.current {
+	font-weight: bold;
+	color: #444444;
+}
+#breadcrumbs a i {
+	margin-right: 5px;
+	opacity: .6;
+}
+#breadcrumbs a:hover i {
+	margin-right: 5px;
+	opacity: .8;
+}
+
+
+/* Responsive design */
+@media (max-width: 480px) {
+	#header h1 {
+		top: 5px;
+		margin: 3px auto;
+	}
+	#user-navs {
+		position: relative;
+		left: auto;
+		right: auto;
+		width: 100%;
+		margin-top: -31px; border-top:1px solid #363E48;
+		margin-bottom: 0px; background:#2E363F; float:right;
+	}
+	.navsbar > .navs {
+		float: none;
+	}
+	
+	#my_menu{ display:none;}
+	#my_menu_input{ display:block;}
+	#user-navs > ul {
+		right: 0px; margin-left:20%!important;
+		margin-top:0px; width:100%; background:#000;
+		position: relative;
+	}
+	#user-navs > ul > li{ padding:0px 0px;}
+	#user-navs > ul > li > a{ padding:5px 10px;}
+	#content {
+		margin-left: 0 !important;
+		border-top-left-radius: 0;
+		margin-top:0px;
+	}
+	#content-header {
+		margin-top: 0;
+		
+		text-align: center;
+	}
+	#content-header h1, #content-header .btn-group {
+		float: none;
+	}
+	#content-header h1 {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-top: 0;
+		padding-top: 15px;
+		width: 100%;
+	}
+	#content-header .btn-group {
+		margin-top: 70px;
+		margin-bottom: 0;
+		margin-right: 0;
+		left: 30%;
+	}
+	
+#sidebar { float: none; width: 100% !important;	display:block; position:relative; top:0px;}
+#sidebar > ul{ margin:0px; padding:0px; width:100%; display:block; z-index:999; position:relative} 
+#sidebar > ul > li { list-style-type:none; display:block; border-top:1px solid #41BEDD; float:none !important; margin:0px; position:relative; padding:2px 10px; cursor:pointer} 
+#sidebar > ul > li:hover ul { display:none;} 
+#sidebar > ul > li:hover { background-color:#36A8c5;} 
+#sidebar > ul > li:hover a{ background:none;}
+#sidebar > ul li ul { margin:0px; padding:0px; top:35px; z-index:999; display:none; position:absolute;  background:#41BEDD; width:100%; min-width:100%; border-radius:none;} 
+#sidebar > ul li ul li { list-style-type:none; margin:0px; font-size:12px; line-height:30px;  } 
+#sidebar > ul li ul li a { display:block; padding:5px 10px; color:#fff; text-decoration:none; font-weight:bold; } 
+#sidebar > ul li ul li:hover a{ background-color:#36A8c5; border-radius:0px;} 
+#sidebar > ul li span { cursor:pointer; margin:0px 2px 0 5px; font-weight:bold; color:#fff; font-size:12px; }
+#sidebar > ul li a i{ background-image: url("../img/glyphicons-halflings-white.png");  margin-top:4px;  vertical-align: top;}	
+#sidebar > a { padding: 9px 20px 9px 15px; display: block !important; color: #eeeeee; float:none !important;	font-size:12px; font-weight:bold}
+#sidebar > ul > li > a { padding:5px;	display:block; 	color: #AAAAAA;}
+
+@media (min-width: 481px) and (max-width: 970px) {
+	body{ background:#49CCED}
+	#header h1 {
+		top:20px;
+	}
+	#search{ top:0px}
+	#my_menu{ display:none;}
+	#my_menu_input{ display:block;}
+	#content{ margin-top:38px;}
+
+	#sidebar > ul > li{ float:none;}
+	#sidebar > ul > li:hover ul{ display:block;}
+	#sidebar, #sidebar > ul {	width: 43px; display: block; position: absolute; background:#49CCED; height:100%; z-index:1;}
+	#sidebar > ul ul {
+		display: none;
+		position: absolute;
+		left:50px;
+		top: 0;
+		min-width: 150px;
+		list-style: none;
+	}
+	#sidebar > ul ul li a {
+		white-space: nowrap;
+		padding: 10px 25px;
+	}
+	#sidebar > ul ul:before {
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		content: "";
+		display: inline-block;
+		left: -6px;
+		position: absolute;
+		top: 11px;
+	}
+	#sidebar > ul ul:after {
+		border-top: 6px solid transparent;
+		border-bottom: 6px solid transparent;
+		content: "";
+		display: inline-block;
+		left: -5px;
+		position: absolute;
+		top: 12px;
+    }
+	#sidebar > a {
+		display: none !important;
+	}
+	#sidebar > ul > li.open.submenu > a {
+    border-bottom: none !important;
+	}
+	#sidebar > ul > li > a > span {
+		display: none;
+	}
+	#content {
+		margin-left: 43px;
+	}
+}
+@media (max-width: 600px) {
+	.widget-title .buttons {
+		float: left;
+	}
+	.panel-left {
+		margin-right: 0;
+	}
+	.panel-right {
+		border-top: 1px solid #DDDDDD;
+		border-left: none;
+		position: relative;
+		top: auto;
+		right: auto;
+		height: auto;
+		width: auto;
+	}
+
+}
+@media (max-width: 767px) {
+	body {
+		padding: 0 !important;
+	}
+	.container-fluid {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#user-navs > ul > li > a > span.text {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	[class*="span"], .row-fluid [class*="span"] {
+		display: block;
+		float: none;
+		margin-left: 0;
+		width: auto;
+	}
+}

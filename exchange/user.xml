@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+  <user>
+    <user_id>1</user_id>
+    <username>aalozie</username>
+    <password>admin</password>
+    <fullname>Administrator</fullname>
+    <user_group>Administrator</user_group>
+    <facility_id>1190</facility_id>
+    <time_login>2019-06-10 11:00:02.0</time_login>
+    <view_identifier>1</view_identifier>
+    <time_stamp>2019-05-09 21:23:37.0</time_stamp>
+    <uploaded>0</uploaded>
+    <time_uploaded>2019-05-09 21:23:37.0</time_uploaded>
+    <local_id>0</local_id>
+    <state_ids>0</state_ids>
+    <id_uuid>d5f4f88e-0761-48d4-bcb2-7ffea77d2457</id_uuid>
+  </user>
+</users>

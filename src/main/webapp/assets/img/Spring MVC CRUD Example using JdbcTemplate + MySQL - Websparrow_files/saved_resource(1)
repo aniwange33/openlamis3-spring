@@ -1,0 +1,14 @@
+/**/ window.__sharethis__.cb3({
+   "share": {
+      "comment_count": 0,
+      "share_count": 1
+   },
+   "og_object": {
+      "id": "2153504028027615",
+      "description": "In this article, we will show you how to create a Spring MVC application to create, read, update, and delete (CRUD) the student records into the database.",
+      "title": "Spring MVC CRUD Example using JdbcTemplate + MySQL - Websparrow",
+      "type": "article",
+      "updated_time": "2019-01-07T15:43:20+0000"
+   },
+   "id": "https://www.websparrow.org/spring/spring-mvc-crud-example-using-jdbctemplate-mysql"
+});

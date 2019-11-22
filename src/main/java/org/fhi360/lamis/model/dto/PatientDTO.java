@@ -1,0 +1,65 @@
+package org.fhi360.lamis.model.dto;
+
+import lombok.Data;
+
+@Data
+public class PatientDTO {
+    private String patientId;
+    private String facilityId;
+    private String hospitalNum;
+    private String uniqueId;
+    private String surname;
+    private String otherNames;
+    private String name;
+    private String gender;
+    private String dateBirth;
+    private String age;
+    private String ageUnit;
+    private String maritalStatus;
+    private String address;
+    private String phone;
+    private String education;
+    private String occupation;
+    private String state;
+    private String lga;
+    private String nextKin;
+    private String addressKin;
+    private String phoneKin;
+    private String relationKin;
+    private String entryPoint;
+    private String dateConfirmedHiv;
+    private String pregnant;
+    private String breastfeeding;
+    private String dateRegistration;
+    private String statusRegistration;
+    private String enrollmentSetting;
+    private String currentStatus = "";
+    private String dateCurrentStatus;
+    private String dateStarted;
+    private String dateLastClinic;
+    private String dateLastRefill;
+    private String dateNextClinic;
+    private String dateNextRefill;
+    private String dateLastViralLoad;
+    private String dateLastCd4;
+    private String dateEnrolledPmtct;
+    private String sourceReferral;
+    private String timeHivDiagnosis;
+    private double lastViralLoad;
+    private double lastCd4;
+    private String lastClinicStage;
+    private String regimentype;
+    private String regimen;
+    private String lastRefillSetting;
+    private String lastRefillDuration;
+    private String sendMessage;
+    private String timeStamp;
+    private String tbStatus;
+    private String communitypharmId;
+    private String casemanagerId;
+    private boolean biometric;
+    private Integer devolve;
+    private Integer dueViralLoad = 0;
+    private String sel;
+    private String viralLoadType;
+}
